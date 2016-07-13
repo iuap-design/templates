@@ -5,6 +5,8 @@
 .u-tabs__tab {
 	height: 37px;
 	line-height: 37px;
+	background-color: #f9f9f9;
+	margin-right: 10px;
 }
 
 .u-tabs.is-upgraded .u-tabs__tab.is-active {
