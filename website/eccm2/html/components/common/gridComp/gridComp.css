@@ -1,5 +1,6 @@
-.u-grid table {
+.u-grid {
 	background-color: #f2fcfd;
+	border: none;
 }
 .u-grid-header-link {
     font-size: 16px;
@@ -20,6 +21,13 @@
 .u-grid td {
 	height: 55px;
 	line-height: 55px;
+	border: none;
+}
+
+.u-grid-content-num {
+	height: 55px;
+	line-height: 55px;
+	border: none;
 }
 
 .u-grid-content-td-div {
@@ -38,4 +46,12 @@
 
 .u-grid-content-div tbody > tr:nth-of-type(even) {
     background-color: #e5f8fc;
+}
+
+.u-grid-content-left .u-grid-content-num:nth-of-type(even) {
+	background-color: #e5f8fc;
+}
+
+.u-grid-header-left {
+	background-color: #00bcd5;
 }

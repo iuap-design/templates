@@ -5,6 +5,7 @@
     height: 39px;
     line-height: 39px;
     text-align: center;
+	border: none;
 }
 
 .ec-table > thead > tr > th {
