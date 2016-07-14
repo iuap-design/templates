@@ -1,7 +1,12 @@
 .u-grid {
+	border: none;
+}
+
+.u-grid .u-grid-content-left, .u-grid table {
 	background-color: #f2fcfd;
 	border: none;
 }
+
 .u-grid-header-link {
     font-size: 16px;
     font-weight: bold;
@@ -9,7 +14,7 @@
 }
 
 .u-grid-header-th {
-	height; 55px;
+	height: 55px;
 	background-color: #00bcd5;
 	text-align: center;
 }
