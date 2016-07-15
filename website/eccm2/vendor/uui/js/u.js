@@ -10070,7 +10070,11 @@ u.Combo = u.BaseComponent.extend({
                 self.selectItem(this._index);
             })
             var rippleContainer = document.createElement('span');
-            u.addClass(rippleContainer, 'u-ripple');
+            u.addClass(rippleContainer, 'u-ripple-container');
+			var _rippleElement = document.createElement('span');
+			u.addClass(_rippleElement, 'u-ripple');
+			
+			rippleContainer.appendChild(_rippleElement);
             li.appendChild(rippleContainer);
             new URipple(li)
             this._ul.appendChild(li);
