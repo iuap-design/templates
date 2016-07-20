@@ -2007,3 +2007,6 @@ article>.dashboard .container-count #message-center {
     position: relative;
     top: 3px
 }
+.server-list li{
+    padding: 4px 0;
+}
