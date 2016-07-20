@@ -4,6 +4,13 @@ body{
 .page-login:before {
     background-image: url("../img/login.png");
 }
+.logindefault.page-login{
+    background-image: url("../img/login.png");
+    padding-top: 30px;
+}
+.logindefault.page-login:before {
+    background: none;
+}
 .page-dark.layout-full:before {
     position: fixed;
     top: 0;
