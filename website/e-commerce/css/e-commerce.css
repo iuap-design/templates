@@ -19,7 +19,7 @@ img{
     color: #ea544a;
     text-decoration:none;
 }
-.head,.nav,.menu{
+.head,#jinrong .nav,.menu{
     background: #F9F9F9;
     width: 100%;
     padding: 5px 5px;
@@ -54,7 +54,7 @@ img{
     background: red;
     height: 20px;
 }
-.nav{
+#jinrong .nav{
     background: #fff;
     height: 70px;
     line-height: 70px;
@@ -270,5 +270,10 @@ img{
 .u-bread-icon {
     display: none;
 }
-
+#jinrong .nav-search-icon{
+    margin-top: -18px;
+}
+#jinrong .nav-search{
+    margin-top: 18px;
+}
 
