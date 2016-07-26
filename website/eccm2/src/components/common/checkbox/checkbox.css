@@ -27,3 +27,21 @@
 	-webkit-mask-image: none;
 	mask-image: none;
 }
+
+.u-checkbox-white .u-checkbox-tick-outline {
+	border: solid 2px #fff;
+    box-sizing: border-box;
+    background: none;
+}
+
+.u-checkbox-white.is-checked .u-checkbox-tick-outline:after {
+    content: '\2714';
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    color: #fff;
+    width: 16px;
+    text-align: center;
+    font-size: 15px;
+    height: 16px;}
+    
