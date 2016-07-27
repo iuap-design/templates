@@ -44,10 +44,18 @@
 <button class="u-button raised accent">搜索</button>
 
   <h4> 复选框 </h4>
-  <label  class="u-checkbox u-checkbox-white" style="width: 200px">
+  <label  class="u-checkbox" style="width: 200px">
     <input type="checkbox" class="u-checkbox-input" checked>
     <span class="u-checkbox-label">Checkbox</span>
 </label>
+
+<div style="background-color: #00bdd5;padding: 10px;">
+	<label  class="u-checkbox u-checkbox-white" style="width: 200px">
+	    <input type="checkbox" class="u-checkbox-input" checked>
+	    <span class="u-checkbox-label">Checkbox</span>
+	</label>
+</div>
+
   <h4> 输入框 </h4>
   <div class="u-text" style="width: 200px;">
     <input class="u-input"/>
@@ -398,6 +406,36 @@
    
   <h4> 页签 </h4>
   <div class="u-tabs u-tabs-pill ec-tabs">
+    <div class="u-tabs__tab-bar">
+        <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
+        <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
+        <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
+    </div>
+    <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+            <li>项目4</li>
+            <li>项目5</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-pills-panel-2">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-pills-panel-3">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+        </ul>
+    </div>
+</div>
+
+<div class="u-tabs u-tabs-pill ec-tabs ec-tabs-button">
     <div class="u-tabs__tab-bar">
         <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
         <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
