@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="../../components/common/dialog/dialog.css">
 	<link rel="stylesheet" href="../../components/common/tab/tab.css">
 	<link rel="stylesheet" href="../../components/common/query/query.css">
+	<link rel="stylesheet" href="../../components/common/showcase/showcase.css">
 	<link rel="stylesheet" href="./template.css">
 </head>
 <body>
@@ -47,6 +48,14 @@
     <input type="checkbox" class="u-checkbox-input" checked>
     <span class="u-checkbox-label">Checkbox</span>
 </label>
+
+<div style="background-color: #00bdd5;padding: 10px;">
+	<label  class="u-checkbox u-checkbox-white" style="width: 200px">
+	    <input type="checkbox" class="u-checkbox-input" checked>
+	    <span class="u-checkbox-label">Checkbox</span>
+	</label>
+</div>
+
   <h4> 输入框 </h4>
   <div class="u-text" style="width: 200px;">
     <input class="u-input"/>
@@ -235,7 +244,7 @@
 			<tr>
 				<th class="u-text-left">
 					<span class="s-b">
-                                        <label class="u-checkbox">
+                                        <label class="u-checkbox u-checkbox-white">
                                             <input id="all-select" type="checkbox" class="u-checkbox-input">
                                             <span class="u-checkbox-label"></span>
 					</label>
@@ -425,6 +434,36 @@
         </ul>
     </div>
 </div>
+
+<div class="u-tabs u-tabs-pill ec-tabs ec-tabs-button">
+    <div class="u-tabs__tab-bar">
+        <a href="#tab-pills-panel-1" class="u-tabs__tab is-active">页签1</a>
+        <a href="#tab-pills-panel-2" class="u-tabs__tab">页签2</a>
+        <a href="#tab-pills-panel-3" class="u-tabs__tab">页签3</a>
+    </div>
+    <div class="u-tabs__panel is-active" id="tab-pills-panel-1">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+            <li>项目4</li>
+            <li>项目5</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-pills-panel-2">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+            <li>项目3</li>
+        </ul>
+    </div>
+    <div class="u-tabs__panel" id="tab-pills-panel-3">
+        <ul>
+            <li>项目1</li>
+            <li>项目2</li>
+        </ul>
+    </div>
+</div>
   <h4> 查询 </h4>
   <!--商品查询条件01------>
 <div id="search-form" class="ec-query">
@@ -470,7 +509,281 @@
 	</ul>
 </div>
 <!--商品查询条件01--end------>
-
+ 	<h4> 橱窗 </h4>
+  <div class="Y_goodsList">
+      <ul class="gL">
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3" id="look">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gL_item">
+            <div class="p_img"><a href="#"><img src="../../components/common/showcase/images/pic.jpg" class="err_product" width="230" height="230"></a></div>
+            <div class="p_price"><span>喜力</span><strong><em>￥</em><i>88.0</i></strong></div>
+            <div class="p_summary"><a href="#">zespri奇异甜<em>果透心</em>凉晶凉晶晶凉晶晶晶亮啊。一百个果果约33个/g，喜欢的快来品尝啊</a></div>
+            <div class="p_style">自建</div>
+          </div>
+          <div class="showOper"><s class="triangle-up"></s>
+            <div class="SKU_code">SKU编码 : 12345678799</div>
+            <div class="SKU_oper">
+              <div class="SKU_oper_o"><span><a href="#" class="a1"></a></span><span><a href="#" class="a2"></a></span><span><a href="#" class="a3">SKU</a></span></div>
+              <label  class="u-checkbox u-checkbox-white">
+    <input type="checkbox" class="u-checkbox-input" checked>
+    <span class="u-checkbox-label"></span>
+</label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
 
   <!-- 你的代码 -->
 
@@ -494,7 +807,7 @@
 	<script src="../../components/common/tab/tab.js"></script>
   <script>
 	u.on(window, 'load', function() {
-
+			
 	})
 </script>
 

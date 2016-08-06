@@ -25,3 +25,35 @@
 .u-tabs-pill .u-tabs__tab:hover {
     background-color: #fff;
 }
+
+.ec-tabs-button .u-tabs__tab{
+    width: 64px;
+    height: 40px;
+    border: 1px solid #ddd;
+    color: #808080;
+    box-shadow: 0 0 2px #ddd;
+    line-height: 40px;
+}
+
+.ec-tabs-button.is-upgraded .u-tabs__tab.is-active {
+    box-shadow: 0 0 2px #00bdd5;
+    background: none;
+    color: #00bdd5;
+    border-color: #00bdd5;
+    font-weight: bold;
+}
+
+
+
+.ec-tabs-button .u-tabs__tab-bar{
+	border-bottom: none;
+}
+
+.ec-tabs-button.is-upgraded .u-tabs__tab.is-active:after {
+	height: 0;
+}
+
+.ec-tabs-button .u-tabs__tab {
+    border-radius: 3px;
+    background: none;
+}
