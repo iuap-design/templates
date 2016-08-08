@@ -26,7 +26,7 @@ body {
 
 /*header*/
 .banner {
-    background: url('../img/banner.jpg') top left no-repeat;
+    background: url('http://design.yyuap.com/static/img/banner.jpg') top left no-repeat;
     height: 612px;
 }
 
@@ -158,7 +158,7 @@ body {
 
 #tab-panel-2 .product-top {
     height: 584px;
-    background: url("../img/bg-product-show.jpg") center center no-repeat;
+    background: url("http://design.yyuap.com/static/img/bg-product-show.jpg") center center no-repeat;
 }
 .product-show-img{
     text-align: center;
@@ -166,7 +166,7 @@ body {
 }
 #tab-panel-2 .product-bottom {
     height: 328px;
-    background: url("../img/content-banner.jpg") center center no-repeat;
+    background: url("http://design.yyuap.com/static/img/content-banner.jpg") center center no-repeat;
 }
 
 .pro-bot-deti {
@@ -207,7 +207,7 @@ body {
 .product-bot-icon {
     width: 52px;
     height: 52px;
-    background: url("../img/icons-footer.png") 0 0 no-repeat;
+    background: url("http://design.yyuap.com/static/img/icons-footer.png") 0 0 no-repeat;
 }
 
 .employee:hover {
@@ -276,7 +276,7 @@ body {
 }
 
 .idea .icon {
-    background: url("../img/icons-ideas.png") 0 0 no-repeat;
+    background: url("http://design.yyuap.com/static/img/icons-ideas.png") 0 0 no-repeat;
     display: inline-block;
     height: 96px;
     width: 102px;
@@ -316,7 +316,7 @@ body {
 }
 
 .start-now {
-    background: url('../img/bg-begin-now.png') center;
+    background: url('http://design.yyuap.com/static/img/bg-begin-now.png') center;
     height: 270px;
     width: 100%;
     overflow: hidden;
@@ -350,7 +350,7 @@ body {
     margin-left:145px;
 }
 .footer-logo {
-    background: url("../img/icons-footer.png") 0 -225px no-repeat;
+    background: url("http://design.yyuap.com/static/img/icons-footer.png") 0 -225px no-repeat;
     width: 132px;
     height: 43px;
     margin-top: 20px;
@@ -367,7 +367,7 @@ body {
 .addr span,
 .phone span,
 .email span {
-    background: url("../img/icons-footer.png") -182px 0 no-repeat;
+    background: url("http://design.yyuap.com/static/img/icons-footer.png") -182px 0 no-repeat;
     width: 18px;
     height: 18px;
     display: inline-block;
