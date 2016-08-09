@@ -1,0 +1,123 @@
+.u-msg-dialog {
+	width: 700px;
+}
+
+.u-msg-content {
+    padding: 30px 35px 54px 30px;
+}
+
+.ec-dialog-upload {
+    height: 232px;
+    border: 1px dashed #ddd;
+    margin-top: 10px;
+    
+}
+
+
+
+.ec-btn-box {
+    width: 100%;
+}
+
+.ec-upload-sc-wrap {
+    margin: 55px auto 0 auto;
+    width: 50px;
+	
+}
+
+.ec-upload-sc-pic {
+	display: block;
+	width: 50px;
+    height: 50px;
+	background: url(images/sc1.png)
+}
+
+.ec-upload-sc-txt {
+	font-size: 12px;
+    text-decoration: underline;
+    color: #ccc;
+
+}
+
+.ec-upload-sc-wrap:hover .ec-upload-sc-pic {
+	background: url(images/sc2.png)
+}
+
+.ec-upload-sc-wrap:hover .ec-upload-sc-txt {
+	color: rgb(0,188,212);
+}
+
+.ec-dialog-tip {
+    margin: 45px auto;
+    width: 485px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.ec-dialog-tip-title {
+    display: inline-block;
+    float: left;
+    width: 40px;
+}
+
+.ec-dialog-tip-cont {
+	display: inline-block;
+	float: left;
+    width: 445px;
+    margin: 0;
+
+}
+
+.ec-pics-showbox {
+    height: 202px;
+    border: 1px solid #ddd;	
+    padding: 15px 15px;
+    overflow-y: auto;
+}
+
+.ec-pics-showbox li {
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.ec-pics-showbox li img{
+    width: 108px;
+    height: 108px;
+    transition: all 1s ease;
+}
+
+.ec-pics-showbox li:hover img{
+	width: 130px;
+    height: 130px;
+}
+
+.ec-pics-showbox ul {
+	margin: 0;
+	padding: 0;
+}
+
+.ec-pics-showbox-del {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 108px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(221,221,221,0.4);
+    margin: 0;
+}
+
+.ec-pics-showbox ul li:hover .ec-pics-showbox-del {
+	display: block;
+}
+
+.ec-pics-showbox-del:hover {
+	color: rgb(0,188,212);
+}
