@@ -18,6 +18,7 @@
 	<link href='../../../vendor/uui/fonts/font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css' charset='utf-8' />
 	<link rel="stylesheet" href="../../../vendor/uui/css/u.css">
 	<link rel="stylesheet" href="../../../vendor/uui/css/grid.css">
+	<link rel="stylesheet" href="../../../vendor/uui/css/tree.css">
 	<link rel="stylesheet" href="../../components/common/button/button.css">
 	<link rel="stylesheet" href="../../components/common/checkbox/checkbox.css">
 	<link rel="stylesheet" href="../../components/common/input/input.css">
@@ -33,7 +34,37 @@
 	<link rel="stylesheet" href="../../components/common/tab/tab.css">
 	<link rel="stylesheet" href="../../components/common/query/query.css">
 	<link rel="stylesheet" href="../../components/common/showcase/showcase.css">
+	<link rel="stylesheet" href="../../components/common/tree/tree.css">
+	<link rel="stylesheet" href="../../components/common/transfer/transfer.css">
 	<link rel="stylesheet" href="./template.css">
+	
+	<!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="../../../vendor/jquery/1.11.3/jquery.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="http://design.yyuap.com/static/iuap-design/3.0.1/js/u-polyfill.js"></script>
+  <![endif]-->
+  <script src="../../../vendor/knockout/knockout-3.2.0.debug.js"></script>
+  <script src="../../../vendor/uui/js/u.js"></script>
+  <script src="../../../vendor/uui/js/u-grid.js"></script>
+  <script src="../../../vendor/uui/js/u-tree.js"></script>
+  <script src="../../components/common/base/base.js"></script>
+  <script src="../../components/common/steps/steps.js"></script>
+	<script src="../../components/common/navmenu/navmenu.js"></script>
+	<script src="../../components/common/gridComp/gridComp.js"></script>
+	<script src="../../components/common/pagination/pagination.js"></script>
+	<script src="../../components/common/combox/combox.js"></script>
+	<script src="../../components/common/validate/validate.js"></script>
+	<script src="../../components/common/dialog/dialog.js"></script>
+	<script src="../../components/common/tab/tab.js"></script>
+	<script src="../../components/common/tree/tree.js"></script>
+	<script src="../../components/common/input/input.js"></script>
+  <script>
+	u.on(window, 'load', function() {
+			
+	})
+</script>
 </head>
 <body>
   <h2>
@@ -67,32 +98,13 @@
   <%- include ../../components/common/query/query.html %>
  	<h4> 橱窗 </h4>
   <%- include ../../components/common/showcase/showcase.html %>
-
+	<h4> 树 </h4>
+  <%- include ../../components/common/tree/tree.html %>
+  <h4> 穿梭框 </h4>
+  <%- include ../../components/common/transfer/transfer.html %>
   <!-- 你的代码 -->
 
-  <!--[if (gte IE 9)|!(IE)]><!-->
-  <script src="../../../vendor/jquery/1.11.3/jquery.min.js"></script>
-  <!--<![endif]-->
-  <!--[if lte IE 8 ]>
-  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-  <script src="http://design.yyuap.com/static/iuap-design/3.0.1/js/u-polyfill.js"></script>
-  <![endif]-->
-  <script src="../../../vendor/knockout/knockout-3.2.0.debug.js"></script>
-  <script src="../../../vendor/uui/js/u.js"></script>
-  <script src="../../../vendor/uui/js/u-grid.js"></script>
-  <script src="../../components/common/steps/steps.js"></script>
-	<script src="../../components/common/navmenu/navmenu.js"></script>
-	<script src="../../components/common/gridComp/gridComp.js"></script>
-	<script src="../../components/common/pagination/pagination.js"></script>
-	<script src="../../components/common/combox/combox.js"></script>
-	<script src="../../components/common/validate/validate.js"></script>
-	<script src="../../components/common/dialog/dialog.js"></script>
-	<script src="../../components/common/tab/tab.js"></script>
-  <script>
-	u.on(window, 'load', function() {
-			
-	})
-</script>
+  
 
 </body>
 </html>
