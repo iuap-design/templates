@@ -19,6 +19,7 @@
    
 </head>
 <body>
+<div class="page-container">
     <div class="page-container">
         <div class="blockpanel" panelname="headNav">
             <div class="nav-toggle">
@@ -129,22 +130,16 @@
                 </div>
             </div>          
         </div>    
-    </div>              
+    </div>  
+</div>            
 </body>
 <script src="lib/jquery/jquery-1.9.1.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    // document.ready = function(){
-        // function toggleMenu(){
-        //     document.getElementsByClassName("xs-hide").toggleClass("xs-show");
-        // }
-
         $(function(){
             $(".nav-toggle").unbind("click").bind("click",function(){
                 $(".xs-hide").toggleClass("xs-show");
             })
         })
-        
-    // }
 </script>
 </html>
