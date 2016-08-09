@@ -1,0 +1,59 @@
+.ec-transfer {
+	position: relative;
+}
+.ec-transfer-section {
+	display: inline-block;
+}
+
+.ec-transfer-section-title {
+    padding-bottom: 15px;
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ec-transfer-section-content {
+	width: 240px;
+    height: 340px;
+    border: 1px solid #ddd;
+    padding: 15px 25px;
+}
+
+.ec-transfer-op {
+	position: absolute;
+    top: 128px;
+    left: 306px;
+}
+.ec-transfer-op button{
+	display: block;
+	margin-bottom: 15px;
+	width: 50px;
+    height: 30px;
+    border: solid 1px#eee;
+    cursor: pointer;
+}
+
+.ec-transfer-op button:focus{
+	outline: none;
+}
+
+.ec-transfer-op-oneR {
+	background: url(../../common/transfer/images/oneR.png) no-repeat center center;
+}
+
+.ec-transfer-op-allR {
+	background: url(../../common/transfer/images/allR.png) no-repeat center center;
+}
+
+.ec-transfer-op-oneL {
+	background: url(../../common/transfer/images/oneL.png) no-repeat center center;
+}
+
+.ec-transfer-op-allR {
+	background: url(../../common/transfer/images/allR.png) no-repeat center center;
+}
+
+.ec-transfer-section-r {
+	margin-left: 75px;
+}

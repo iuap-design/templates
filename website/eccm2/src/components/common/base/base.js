@@ -1,0 +1,1 @@
+var ec = window.ec = {};

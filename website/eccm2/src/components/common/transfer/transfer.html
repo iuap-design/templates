@@ -1,0 +1,144 @@
+<div class="ec-transfer">
+	
+	<div class="ec-transfer-section">
+	    <div class="ec-transfer-section-title">
+	    	待分配渠道节点
+   		</div>
+   		<div class="ec-transfer-section-content">
+			<div class="u-text ec-text" id="ec-treeSearch" style="width: 200px;">
+			    <input class="u-input"/>
+			    <label class="u-label">输入名称或编码</label>
+			    <a href="#" class="ec-search_ico"></a>
+			</div>
+		    <div id="treeTest6" class="ztree" u-meta='{"id":"tree6","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
+		</div>
+	</div>
+	<div class="ec-transfer-op">
+		<button class="ec-transfer-op-oneR"></button>
+		<button class="ec-transfer-op-allR"></button>
+		<button class="ec-transfer-op-oneL"></button>
+		<button class="ec-transfer-op-allR"></button>
+	</div>
+	<div class="ec-transfer-section ec-transfer-section-r">
+	    <div class="ec-transfer-section-title">
+	    	已分配渠道节点
+   		</div>
+   		<div class="ec-transfer-section-content">
+			<div class="u-text ec-text" id="ec-treeSearch" style="width: 200px;">
+			    <input class="u-input"/>
+			    <label class="u-label">输入名称或编码</label>
+			    <a href="#" class="ec-search_ico"></a>
+			</div>
+		    <div id="treeTest6" class="ztree" u-meta='{"id":"tree6","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	u.on(window, 'load', function() {
+		var viewModel = {
+		    treeSetting:{
+		        view:{
+		            showLine:false,
+		            selectedMulti:false,
+		            showIcon: false
+		        },
+		        check:{
+		        	enable: true,
+		        	chkboxType : {"Y": "ps", "N": "ps"},
+		        },
+		        callback:{
+		            onClick:function(e,id,node){
+		                // alert(id)
+		                // alert(node)
+		                var rightInfo = node.name + '被选中';
+		                u.showMessage({msg:rightInfo,position:"top"})
+		            }
+		        }
+		    },
+		    dataTable: new u.DataTable({
+		        meta: {
+		            'id': {
+		                'value':""
+		            },
+		            'pid': {
+		                'value':""
+		            },
+		            'title':{
+		                'value':""
+		            }
+		        }
+		    })
+		};
+		var app = u.createApp({
+		    el: '.ec-transfer',
+		    model: viewModel
+		})
+		var data = {
+		  "pageIndex": 1,
+		  "pageSize": 10,
+		  "rows": [
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "01",
+		        "pid": "root",
+		        "title": "Parent1"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "02",
+		        "pid": "root",
+		        "title": "Parent2"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "101",
+		        "pid": "01",
+		        "title": "Child11"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "102",
+		        "pid": "01",
+		        "title": "mChild12"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "201",
+		        "pid": "02",
+		        "title": "Child21"
+		      }
+		    }
+		  ]
+		}
+		viewModel.dataTable.setData(data);
+		
+		var textSearch = document.querySelector('#ec-treeSearch')['ec.Text'],
+			allRows = viewModel.dataTable.getAllRows();
+		
+		textSearch.on('u.text.keyup', function() {
+			debugger;
+			var q = this._input.value.toLowerCase(),
+				rs = allRows,
+				rsl = [];
+			for(var i=0;i < rs.length;i++) {
+				var v = rs[i].getValue('title');
+				if(v.toLowerCase().indexOf(q) >= 0) {
+					rsl.push(rs[i]);
+				}
+			}
+			viewModel.dataTable.removeAllRows();
+			viewModel.dataTable.addRows(rsl);
+			
+		});
+	})
+</script>

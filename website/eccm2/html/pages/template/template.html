@@ -18,6 +18,7 @@
 	<link href='../../../vendor/uui/fonts/font-awesome/css/font-awesome.css' rel='stylesheet' type='text/css' charset='utf-8' />
 	<link rel="stylesheet" href="../../../vendor/uui/css/u.css">
 	<link rel="stylesheet" href="../../../vendor/uui/css/grid.css">
+	<link rel="stylesheet" href="../../../vendor/uui/css/tree.css">
 	<link rel="stylesheet" href="../../components/common/button/button.css">
 	<link rel="stylesheet" href="../../components/common/checkbox/checkbox.css">
 	<link rel="stylesheet" href="../../components/common/input/input.css">
@@ -33,7 +34,37 @@
 	<link rel="stylesheet" href="../../components/common/tab/tab.css">
 	<link rel="stylesheet" href="../../components/common/query/query.css">
 	<link rel="stylesheet" href="../../components/common/showcase/showcase.css">
+	<link rel="stylesheet" href="../../components/common/tree/tree.css">
+	<link rel="stylesheet" href="../../components/common/transfer/transfer.css">
 	<link rel="stylesheet" href="./template.css">
+	
+	<!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="../../../vendor/jquery/1.11.3/jquery.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="http://design.yyuap.com/static/iuap-design/3.0.1/js/u-polyfill.js"></script>
+  <![endif]-->
+  <script src="../../../vendor/knockout/knockout-3.2.0.debug.js"></script>
+  <script src="../../../vendor/uui/js/u.js"></script>
+  <script src="../../../vendor/uui/js/u-grid.js"></script>
+  <script src="../../../vendor/uui/js/u-tree.js"></script>
+  <script src="../../components/common/base/base.js"></script>
+  <script src="../../components/common/steps/steps.js"></script>
+	<script src="../../components/common/navmenu/navmenu.js"></script>
+	<script src="../../components/common/gridComp/gridComp.js"></script>
+	<script src="../../components/common/pagination/pagination.js"></script>
+	<script src="../../components/common/combox/combox.js"></script>
+	<script src="../../components/common/validate/validate.js"></script>
+	<script src="../../components/common/dialog/dialog.js"></script>
+	<script src="../../components/common/tab/tab.js"></script>
+	<script src="../../components/common/tree/tree.js"></script>
+	<script src="../../components/common/input/input.js"></script>
+  <script>
+	u.on(window, 'load', function() {
+			
+	})
+</script>
 </head>
 <body>
   <h2>
@@ -86,6 +117,12 @@
     <label class="u-label"></label>
     <span class="u-combo-icon" data-role="combo-button"></span>
 </div>
+
+<script>
+	u.on(window, 'load', function() {
+		document.getElementById('combo2')['u.Combo'].setComboData([{value:'01',name:'男'},{value:'02',name:'女'}]);
+	})
+</script>
 	<h4> 检验 </h4>
   <div id="validateExample" style="width: 200px;">
 	<div class="u-text"  u-meta='{"id":"f2","type":"u-text","data":"dt1","field":"f2","tipId":"floatInfo1","successId":"floatsuccess1", "tipAliveTime": -1}'>
@@ -784,32 +821,273 @@
         </li>
       </ul>
     </div>
+	<h4> 树 </h4>
+  <div id="treeSection" style="width: 500px;
+    height: 500px;">
+	<div class="u-text ec-text" id="ec-treeSearch" style="width: 200px;">
+	    <input class="u-input"/>
+	    <label class="u-label">输入名称或编码</label>
+	    <a href="#" class="ec-search_ico"></a>
+	</div>
+    <div id="treeTest6" class="ztree" u-meta='{"id":"tree6","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
+</div>
 
-  <!-- 你的代码 -->
-
-  <!--[if (gte IE 9)|!(IE)]><!-->
-  <script src="../../../vendor/jquery/1.11.3/jquery.min.js"></script>
-  <!--<![endif]-->
-  <!--[if lte IE 8 ]>
-  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-  <script src="http://design.yyuap.com/static/iuap-design/3.0.1/js/u-polyfill.js"></script>
-  <![endif]-->
-  <script src="../../../vendor/knockout/knockout-3.2.0.debug.js"></script>
-  <script src="../../../vendor/uui/js/u.js"></script>
-  <script src="../../../vendor/uui/js/u-grid.js"></script>
-  <script src="../../components/common/steps/steps.js"></script>
-	<script src="../../components/common/navmenu/navmenu.js"></script>
-	<script src="../../components/common/gridComp/gridComp.js"></script>
-	<script src="../../components/common/pagination/pagination.js"></script>
-	<script src="../../components/common/combox/combox.js"></script>
-	<script src="../../components/common/validate/validate.js"></script>
-	<script src="../../components/common/dialog/dialog.js"></script>
-	<script src="../../components/common/tab/tab.js"></script>
-  <script>
+<script>
 	u.on(window, 'load', function() {
+		var viewModel = {
+		    treeSetting:{
+		        view:{
+		            showLine:false,
+		            selectedMulti:false,
+		            showIcon: false
+		        },
+		        check:{
+		        	enable: true,
+		        	chkboxType : {"Y": "ps", "N": "ps"},
+		        },
+		        callback:{
+		            onClick:function(e,id,node){
+		                // alert(id)
+		                // alert(node)
+		                var rightInfo = node.name + '被选中';
+		                u.showMessage({msg:rightInfo,position:"top"})
+		            }
+		        }
+		    },
+		    dataTable: new u.DataTable({
+		        meta: {
+		            'id': {
+		                'value':""
+		            },
+		            'pid': {
+		                'value':""
+		            },
+		            'title':{
+		                'value':""
+		            }
+		        }
+		    })
+		};
+		var app = u.createApp({
+		    el: '#treeSection',
+		    model: viewModel
+		})
+		var data = {
+		  "pageIndex": 1,
+		  "pageSize": 10,
+		  "rows": [
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "01",
+		        "pid": "root",
+		        "title": "Parent1"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "02",
+		        "pid": "root",
+		        "title": "Parent2"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "101",
+		        "pid": "01",
+		        "title": "Child11"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "102",
+		        "pid": "01",
+		        "title": "mChild12"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "201",
+		        "pid": "02",
+		        "title": "Child21"
+		      }
+		    }
+		  ]
+		}
+		viewModel.dataTable.setData(data);
+		
+		var textSearch = document.querySelector('#ec-treeSearch')['ec.Text'],
+			allRows = viewModel.dataTable.getAllRows();
+		
+		textSearch.on('u.text.keyup', function() {
+			debugger;
+			var q = this._input.value.toLowerCase(),
+				rs = allRows,
+				rsl = [];
+			for(var i=0;i < rs.length;i++) {
+				var v = rs[i].getValue('title');
+				if(v.toLowerCase().indexOf(q) >= 0) {
+					rsl.push(rs[i]);
+				}
+			}
+			viewModel.dataTable.removeAllRows();
+			viewModel.dataTable.addRows(rsl);
 			
+		});
 	})
 </script>
+  <h4> 穿梭框 </h4>
+  <div class="ec-transfer">
+	
+	<div class="ec-transfer-section">
+	    <div class="ec-transfer-section-title">
+	    	待分配渠道节点
+   		</div>
+   		<div class="ec-transfer-section-content">
+			<div class="u-text ec-text" id="ec-treeSearch" style="width: 200px;">
+			    <input class="u-input"/>
+			    <label class="u-label">输入名称或编码</label>
+			    <a href="#" class="ec-search_ico"></a>
+			</div>
+		    <div id="treeTest6" class="ztree" u-meta='{"id":"tree6","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
+		</div>
+	</div>
+	<div class="ec-transfer-op">
+		<button class="ec-transfer-op-oneR"></button>
+		<button class="ec-transfer-op-allR"></button>
+		<button class="ec-transfer-op-oneL"></button>
+		<button class="ec-transfer-op-allR"></button>
+	</div>
+	<div class="ec-transfer-section ec-transfer-section-r">
+	    <div class="ec-transfer-section-title">
+	    	已分配渠道节点
+   		</div>
+   		<div class="ec-transfer-section-content">
+			<div class="u-text ec-text" id="ec-treeSearch" style="width: 200px;">
+			    <input class="u-input"/>
+			    <label class="u-label">输入名称或编码</label>
+			    <a href="#" class="ec-search_ico"></a>
+			</div>
+		    <div id="treeTest6" class="ztree" u-meta='{"id":"tree6","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
+		</div>
+	</div>
+</div>
+
+<script>
+	u.on(window, 'load', function() {
+		var viewModel = {
+		    treeSetting:{
+		        view:{
+		            showLine:false,
+		            selectedMulti:false,
+		            showIcon: false
+		        },
+		        check:{
+		        	enable: true,
+		        	chkboxType : {"Y": "ps", "N": "ps"},
+		        },
+		        callback:{
+		            onClick:function(e,id,node){
+		                // alert(id)
+		                // alert(node)
+		                var rightInfo = node.name + '被选中';
+		                u.showMessage({msg:rightInfo,position:"top"})
+		            }
+		        }
+		    },
+		    dataTable: new u.DataTable({
+		        meta: {
+		            'id': {
+		                'value':""
+		            },
+		            'pid': {
+		                'value':""
+		            },
+		            'title':{
+		                'value':""
+		            }
+		        }
+		    })
+		};
+		var app = u.createApp({
+		    el: '.ec-transfer',
+		    model: viewModel
+		})
+		var data = {
+		  "pageIndex": 1,
+		  "pageSize": 10,
+		  "rows": [
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "01",
+		        "pid": "root",
+		        "title": "Parent1"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "02",
+		        "pid": "root",
+		        "title": "Parent2"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "101",
+		        "pid": "01",
+		        "title": "Child11"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "102",
+		        "pid": "01",
+		        "title": "mChild12"
+		      }
+		    },
+		    {
+		      "status": "nrm",
+		      "data": {
+		        "id": "201",
+		        "pid": "02",
+		        "title": "Child21"
+		      }
+		    }
+		  ]
+		}
+		viewModel.dataTable.setData(data);
+		
+		var textSearch = document.querySelector('#ec-treeSearch')['ec.Text'],
+			allRows = viewModel.dataTable.getAllRows();
+		
+		textSearch.on('u.text.keyup', function() {
+			debugger;
+			var q = this._input.value.toLowerCase(),
+				rs = allRows,
+				rsl = [];
+			for(var i=0;i < rs.length;i++) {
+				var v = rs[i].getValue('title');
+				if(v.toLowerCase().indexOf(q) >= 0) {
+					rsl.push(rs[i]);
+				}
+			}
+			viewModel.dataTable.removeAllRows();
+			viewModel.dataTable.addRows(rsl);
+			
+		});
+	})
+</script>
+  <!-- 你的代码 -->
+
+  
 
 </body>
 </html>
