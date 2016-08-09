@@ -8,12 +8,8 @@ ul{
 a:hover{
     text-decoration:none;
 }
-img{
-    vertical-align: top;
-}
-.width-full{
-    overflow: hidden;
-}*/
+
+*/
 
 textarea {
     margin: 0;
@@ -25,19 +21,47 @@ body {
 }
 
 /*header*/
+.u-container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
 .banner {
-    background: url('http://design.yyuap.com/static/img/banner.jpg') top left no-repeat;
-    height: 612px;
+    width: 100%;
+    position: relative;
+}
+/*解决不同屏幕下，title的显示*/
+@media all and (max-width: 768px) {
+    .hanberger{
+        display: block;
+        text-align: center;
+    }
+    .navs,.operate{
+        display: none;
+    }
+}
+@media all and (min-width: 769px){
+    .hanberger{
+        display: none;
+    }
 }
 
+.uf{
+    color: #fff;
+    font-size: 20px;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left:-420px;
+}
 .header {
     margin: 0 auto;
-    height: 50px;
-    width: 1366px;
+    height: 45px;
     padding-top: 26px;
-    text-align: center;
-    line-height: 50px;
+    line-height: 45px;
 }
+
 
 .header a {
     text-decoration: none;
@@ -49,7 +73,11 @@ body {
 .logo {
     text-align: left;
 }
-
+.logo img{
+    display: inline-block;
+    width: 141px;
+    height: 45px;
+}
 .navs {
     text-align: right;
 }
