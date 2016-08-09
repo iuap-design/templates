@@ -39,6 +39,7 @@
 
 .ztree li span.button.chk.checkbox_true_part {
 	background-position: 0 0;
+	background: url(images/checkO.png) left center no-repeat;
 }
 
 .ztree > li span {
