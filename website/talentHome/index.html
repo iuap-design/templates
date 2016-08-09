@@ -26,20 +26,35 @@
 <div class="u-container-fluid">
     <div class="banner">
         <img src="img/banner.jpg" alt=""/>
-        <div class="u-row banner-content">
-            <div class="header">
-                <div class="u-col-5 u-col-sm-3 u-col-xs-6 logo"><img src="./img/talentlogo.png" alt="logo"></div>
-                <div class="u-col-4 u-col-sm-5 navs">
-                    <a href="#" class="cur">首页</a>
-                    <a href="product.html">产品</a>
-                    <a href="">关于我们</a>
+        <div class="banner-content">
+            <div class="header-wrapper">
+                <div class="headContainer">
+                    <div class="u-col-sm-3">
+                        <img src="./img/talentlogo.png" alt="logo">
+                    </div>
+                    <div class="u-col-md-9 u-col-xs-12">
+                        <ul class="nav-menu">
+                            <li>
+                                <a href="#" class="cur">首页</a>
+                            </li>
+                            <li>
+                                <a href="product.html">产品</a>
+                            </li>
+                            <li>
+                                <a href="">关于我们</a>
+                            </li>
+                            <li>
+                                <a href="" class="login cur">登录</a>
+                            </li>
+                            <li>
+                                <a href="" class="regiest">注册</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </div>
-                <div class="u-col-3 u-col-sm-4 operate">
-                    <a href="" class="login cur">登录</a>
-                    <a href="" class="regiest">注册</a>
-                </div>
-                <div class="u-col-xs-6 hanberger"><i class="uf uf-alignjustify"></i></div>
             </div>
+            
             <div class="center-block info">
                 <h3 class="text-middle">
                     赋能，激活，创造人力资本新价值
@@ -268,4 +283,11 @@
 <script src="http://design.yyuap.com/static/uui/latest/js/u.js"></script>
 <script src="js/index.js"></script>
 </body>
+<script type="text/javascript">
+        $(function(){
+            $(".nav-toggle").unbind("click").bind("click",function(){
+                $(".xs-hide").toggleClass("xs-show");
+            })
+        })
+</script>
 </html>
