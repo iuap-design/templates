@@ -3,6 +3,7 @@
 }
 .ec-transfer-section {
 	display: inline-block;
+	overflow: hidden;
 }
 
 .ec-transfer-section-title {
@@ -22,8 +23,8 @@
 
 .ec-transfer-op {
 	position: absolute;
-	top: 120px;
-	left: 100px;
+    top: 128px;
+    left: 306px;
 }
 .ec-transfer-op button{
 	display: block;
@@ -50,8 +51,8 @@
 	background: url(../../common/transfer/images/oneL.png) no-repeat center center;
 }
 
-.ec-transfer-op-allR {
-	background: url(../../common/transfer/images/allR.png) no-repeat center center;
+.ec-transfer-op-allL {
+	background: url(../../common/transfer/images/allL.png) no-repeat center center;
 }
 
 .ec-transfer-section-r {

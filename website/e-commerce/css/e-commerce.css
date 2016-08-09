@@ -8,9 +8,9 @@ ul{
 a:hover{
     text-decoration:none;
 }
-img{
-    vertical-align: top;
-}
+/*img{
+    vertical-align: middle;
+}*/
 .width-full{
     overflow: hidden;
 }
