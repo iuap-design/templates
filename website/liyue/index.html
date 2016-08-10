@@ -19,118 +19,250 @@
    
 </head>
 <body>
-<div class="page-container">
+<div class="page-container-box">
     <div class="page-container">
-        <div class="u-widget" panelname="headNav">
-            <div class="nav-toggle">
-                <i class="uf uf-alignjustify1"></i>
-            </div>
-            <div class="header-wrapper xs-hide">
-                <div class="headContainer"> 
-                    <div class="row">
-                        <div class="u-col-md-3">
-                            <span class="headerlogo">
-                                <img src="http://design.yyuap.com/static/img/sprite-ui.png" >
-                            </span>
-                        </div>
-                        <div class="u-col-md-9 u-col-xs-12">
-                            <ul class="nav-menu">
-                                <li>赛事日程</li>
-                                <li>走进里约</li>
-                                <li>运动员风采</li>
-                                <li>直播专区</li>
-                            </ul>
+        <div class="layoutBox widgetBox ui-sortable">
+            <div class="u-row u-drag ui-draggable ui-draggable-handle">
+                <div class="u-col-md-12">
+                    <div class="widgetBox ui-sortable">
+                        <div panelname="headNav" class="u-widget u-drag">
+                            <div class="nav-toggle"><i class="uf uf-alignjustify1"></i></div>
+                            <div class="header-wrapper xs-hide">
+                                <div class="headContainer">
+                                    <div class="row">
+                                        <div class="u-col-md-3"><span class="headerlogo"> <img
+                                                data-bind="attr: { src: logoImg}"
+                                                src="http://design.yyuap.com/static/img/sprite-ui.png"> </span></div>
+                                        <div class="u-col-md-9">
+                                            <ul data-bind="foreach: navlist" class="nav-menu">
+                                                <li data-bind="text: title">赛事日程</li>
+                                                <li data-bind="text: title">走进里约</li>
+                                                <li data-bind="text: title">运动员风采</li>
+                                                <li data-bind="text: title">直播专区</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-menubar" style="display: none;">
+                                <ul>
+                                    <li class="hide"><i title="回退" data-type="window"
+                                                        class="uf uf-reply btn btn-outline btn-pill-right icon-max"></i>
+                                    </li>
+                                    <li class="hide"><i style="font-size:15px;" title="回退" data-type="window"
+                                                        class="uf btn btn-outline btn-pill-right icon-max">T</i></li>
+                                    <li><i title="编辑" data-target="#modalBlue" data-toggle="modal" data-type="edit"
+                                           class="uf uf-pencil  btn btn-outline btn-pill-left icon-pencil"
+                                           count="0"></i></li>
+                                    <li class="hide"><i title="链接" data-type="collage"
+                                                        class="uf uf-linksymbol btn btn-outline icon-unfold"></i></li>
+                                    <li><i title="删除" data-type="del"
+                                           class="uf uf-trash  btn btn-outline icon-cancel02"></i></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="u-widget" panelname="carousel">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-                
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" class="active"></li>
-                    <li data-target="#carousel-example-generic"></li>
-                    <li data-target="#carousel-example-generic"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="http://design.yyuap.com/static/img/carousel-1.jpg"/>
-                        <div class="carousel-caption">carousel-1</div>
-                    </div>
-                    <div class="item">
-                        <img src="http://design.yyuap.com/static/img/carousel-2.jpg"/>
-                        <div class="carousel-caption">carousel-2</div>
-                    </div>
-                    <div class="item">
-                        <img src="http://design.yyuap.com/static/img/carousel-3.jpg"/>
-                        <div class="carousel-caption">carousel-3</div>
-                    </div>
+                <div class="widget-menubar" style="display: none;">
+                    <ul>
+                        <li class="hide"><i title="回退" data-type="window"
+                                            class="uf uf-reply btn btn-outline btn-pill-right icon-max"></i></li>
+                        <li class="hide"><i style="font-size:15px;" title="回退" data-type="window"
+                                            class="uf btn btn-outline btn-pill-right icon-max">T</i></li>
+                        <li><i title="编辑" data-target="#modalBlue" data-toggle="modal" data-type="edit"
+                               class="uf uf-pencil  btn btn-outline btn-pill-left icon-pencil" count="0"></i></li>
+                        <li class="hide"><i title="链接" data-type="collage"
+                                            class="uf uf-linksymbol btn btn-outline icon-unfold"></i></li>
+                        <li><i title="删除" data-type="del" class="uf uf-trash  btn btn-outline icon-cancel02"></i></li>
+                    </ul>
                 </div>
+            </div>
+            <div class="u-row u-drag ui-draggable ui-draggable-handle">
+                <div class="u-col-md-12">
+                    <div class="widgetBox ui-sortable">
+                        <div panelname="carousel" class="u-widget u-drag">
+                            <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+                                <ol data-bind="foreach: carousels" class="carousel-indicators">
+                                    <li data-bind="attr: { 'data-slide-to': $index,class: $index() &lt; 1? 'active':''}"
+                                        data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-bind="attr: { 'data-slide-to': $index,class: $index() &lt; 1? 'active':''}"
+                                        data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                                    <li data-bind="attr: { 'data-slide-to': $index,class: $index() &lt; 1? 'active':''}"
+                                        data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                                </ol>
+                                <div data-bind="foreach: carousels" role="listbox" class="carousel-inner">
+                                    <div data-bind="css: { active:  $index() &lt; 1 }" class="item active"><img
+                                            data-bind="attr: { src: carouselImg, alt: carouselName }"
+                                            src="http://design.yyuap.com/static/img/carousel-1.jpg" alt="carousel-1">
 
-                  <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                                        <div data-bind="text: carouselName" class="carousel-caption">carousel-1</div>
+                                    </div>
+                                    <div data-bind="css: { active:  $index() &lt; 1 }" class="item"><img
+                                            data-bind="attr: { src: carouselImg, alt: carouselName }"
+                                            src="http://design.yyuap.com/static/img/carousel-2.jpg" alt="carousel-2">
+
+                                        <div data-bind="text: carouselName" class="carousel-caption">carousel-2</div>
+                                    </div>
+                                    <div data-bind="css: { active:  $index() &lt; 1 }" class="item"><img
+                                            data-bind="attr: { src: carouselImg, alt: carouselName }"
+                                            src="http://design.yyuap.com/static/img/carousel-3.jpg" alt="carousel-3">
+
+                                        <div data-bind="text: carouselName" class="carousel-caption">carousel-3</div>
+                                    </div>
+                                </div>
+                                <a data-slide="prev" role="button" href="#carousel-example-generic"
+                                   class="left carousel-control"> <span aria-hidden="true"
+                                                                        class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span> </a> <a data-slide="next" role="button"
+                                                                                  href="#carousel-example-generic"
+                                                                                  class="right carousel-control"> <span
+                                    aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span> <span
+                                    class="sr-only">Next</span> </a></div>
+                            <div class="widget-menubar" style="display: none;">
+                                <ul>
+                                    <li class="hide"><i title="回退" data-type="window"
+                                                        class="uf uf-reply btn btn-outline btn-pill-right icon-max"></i>
+                                    </li>
+                                    <li class="hide"><i style="font-size:15px;" title="回退" data-type="window"
+                                                        class="uf btn btn-outline btn-pill-right icon-max">T</i></li>
+                                    <li><i title="编辑" data-target="#modalBlue" data-toggle="modal" data-type="edit"
+                                           class="uf uf-pencil  btn btn-outline btn-pill-left icon-pencil"
+                                           count="0"></i></li>
+                                    <li class="hide"><i title="链接" data-type="collage"
+                                                        class="uf uf-linksymbol btn btn-outline icon-unfold"></i></li>
+                                    <li><i title="删除" data-type="del"
+                                           class="uf uf-trash  btn btn-outline icon-cancel02"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div panelname="illustrate" class="u-widget u-drag">
+                            <ul data-bind="foreach: newslist" class="u-gallery u-row u-gallery-default">
+                                <li class="u-col-md-4">
+                                    <div class="u-gallery-item"><a data-bind="attr: { href : textImg}"
+                                                                   href="http://design.yyuap.com/static/img/desiner3.jpg">
+                                        <img data-bind="attr: { src : textImg, alt : title }"
+                                             src="http://design.yyuap.com/static/img/desiner3.jpg"
+                                             alt="奥运开幕在即 中国体操女队入场训练">
+
+                                        <h3 data-bind="text : title" class="u-gallery-title">奥运开幕在即 中国体操女队入场训练</h3>
+
+                                        <p data-bind="text : textContext" class="u-gallery-desc">
+                                            8月4日,中国体操队队员范忆琳在赛前训练中。当日,中国体操女队队员在里约热内卢奥林匹克体育馆进行训练。里约奥运会体操比赛将于8月6日拉开战幕.</p>
+                                        <button data-bind="text : buttonText" class="u-button u-button-info">查看更多
+                                        </button>
+                                    </a></div>
+                                </li>
+                                <li class="u-col-md-4">
+                                    <div class="u-gallery-item"><a data-bind="attr: { href : textImg}"
+                                                                   href="http://design.yyuap.com/static/img/desiner4.jpg">
+                                        <img data-bind="attr: { src : textImg, alt : title }"
+                                             src="http://design.yyuap.com/static/img/desiner4.jpg"
+                                             alt="福原爱领衔日本乒乓球队训练备战">
+
+                                        <h3 data-bind="text : title" class="u-gallery-title">福原爱领衔日本乒乓球队训练备战</h3>
+
+                                        <p data-bind="text : textContext" class="u-gallery-desc">
+                                            2016年8月5日，2016年里约奥运会，福原爱领衔日本乒乓球队训练备战。988年11月1日出生于日本宫城县仙台市，日本乒乓球运动员。2000年，成为历史上年龄最小的日本国家队成员。</p>
+                                        <button data-bind="text : buttonText" class="u-button u-button-info">查看更多
+                                        </button>
+                                    </a></div>
+                                </li>
+                                <li class="u-col-md-4">
+                                    <div class="u-gallery-item"><a data-bind="attr: { href : textImg}"
+                                                                   href="http://design.yyuap.com/static/img/desiner5.jpg">
+                                        <img data-bind="attr: { src : textImg, alt : title }"
+                                             src="http://design.yyuap.com/static/img/desiner5.jpg" alt="英国场地自行车进行赛前训练">
+
+                                        <h3 data-bind="text : title" class="u-gallery-title">英国场地自行车进行赛前训练</h3>
+
+                                        <p data-bind="text : textContext" class="u-gallery-desc">英国场地自行车女队 Great Britain
+                                            Women's Track Cycling
+                                            Team队员组成：维多利亚-彭德莱顿、杰西卡-瓦妮实、温迪-霍汶娜格尔、丹尼尔-金、乔安娜-罗斯尔、劳拉-特洛特.</p>
+                                        <button data-bind="text : buttonText" class="u-button u-button-info">查看更多
+                                        </button>
+                                    </a></div>
+                                </li>
+                            </ul>
+                            <div class="widget-menubar" style="display: none;">
+                                <ul>
+                                    <li class="hide"><i title="回退" data-type="window"
+                                                        class="uf uf-reply btn btn-outline btn-pill-right icon-max"></i>
+                                    </li>
+                                    <li class="hide"><i style="font-size:15px;" title="回退" data-type="window"
+                                                        class="uf btn btn-outline btn-pill-right icon-max">T</i></li>
+                                    <li><i title="编辑" data-target="#modalBlue" data-toggle="modal" data-type="edit"
+                                           class="uf uf-pencil  btn btn-outline btn-pill-left icon-pencil"
+                                           count="0"></i></li>
+                                    <li class="hide"><i title="链接" data-type="collage"
+                                                        class="uf uf-linksymbol btn btn-outline icon-unfold"></i></li>
+                                    <li><i title="删除" data-type="del"
+                                           class="uf uf-trash  btn btn-outline icon-cancel02"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div panelname="footer" class="u-widget u-drag">
+                            <div data-bind="foreach: footers" class="footer">
+                                <div class="footer-text"><span data-bind="text:footerInfo">版权所有：用友网络科技股份有限公司 2016 京ICP备05007539号-7 京ICP证100714号 京公网安备1101080209224号</span>
+                                </div>
+                                <div class="footer-img"><img data-bind="attr: { src: footerImg}"
+                                                             src="http://design.yyuap.com/static/img/bg-all.jpg"></div>
+                            </div>
+                            <div class="widget-menubar" style="display: none;">
+                                <ul>
+                                    <li class="hide"><i title="回退" data-type="window"
+                                                        class="uf uf-reply btn btn-outline btn-pill-right icon-max"></i>
+                                    </li>
+                                    <li class="hide"><i style="font-size:15px;" title="回退" data-type="window"
+                                                        class="uf btn btn-outline btn-pill-right icon-max">T</i></li>
+                                    <li><i title="编辑" data-target="#modalBlue" data-toggle="modal" data-type="edit"
+                                           class="uf uf-pencil  btn btn-outline btn-pill-left icon-pencil"
+                                           count="0"></i></li>
+                                    <li class="hide"><i title="链接" data-type="collage"
+                                                        class="uf uf-linksymbol btn btn-outline icon-unfold"></i></li>
+                                    <li><i title="删除" data-type="del"
+                                           class="uf uf-trash  btn btn-outline icon-cancel02"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="u-row u-drag ui-draggable ui-draggable-handle">
+                            <div class="u-col-md-12">
+                                <div class="widgetBox ui-sortable"></div>
+                            </div>
+                            <div class="widget-menubar" style="display: none;">
+                                <ul>
+                                    <li class="hide"><i title="回退" data-type="window"
+                                                        class="uf uf-reply btn btn-outline btn-pill-right icon-max"></i>
+                                    </li>
+                                    <li class="hide"><i style="font-size:15px;" title="回退" data-type="window"
+                                                        class="uf btn btn-outline btn-pill-right icon-max">T</i></li>
+                                    <li><i title="编辑" data-target="#modalBlue" data-toggle="modal" data-type="edit"
+                                           class="uf uf-pencil  btn btn-outline btn-pill-left icon-pencil"
+                                           count="0"></i></li>
+                                    <li class="hide"><i title="链接" data-type="collage"
+                                                        class="uf uf-linksymbol btn btn-outline icon-unfold"></i></li>
+                                    <li><i title="删除" data-type="del"
+                                           class="uf uf-trash  btn btn-outline icon-cancel02"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-menubar" style="display: none;">
+                    <ul>
+                        <li class="hide"><i title="回退" data-type="window"
+                                            class="uf uf-reply btn btn-outline btn-pill-right icon-max"></i></li>
+                        <li class="hide"><i style="font-size:15px;" title="回退" data-type="window"
+                                            class="uf btn btn-outline btn-pill-right icon-max">T</i></li>
+                        <li><i title="编辑" data-target="#modalBlue" data-toggle="modal" data-type="edit"
+                               class="uf uf-pencil  btn btn-outline btn-pill-left icon-pencil" count="0"></i></li>
+                        <li class="hide"><i title="链接" data-type="collage"
+                                            class="uf uf-linksymbol btn btn-outline icon-unfold"></i></li>
+                        <li><i title="删除" data-type="del" class="uf uf-trash  btn btn-outline icon-cancel02"></i></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="u-widget" panelname="illustrate">
-            <ul class="u-gallery u-row u-gallery-default">
-                <li class="u-col-md-4"  >
-                    <div class="u-gallery-item">
-                        <a href="">
-                            <img src="http://design.yyuap.com/static/img/desiner3.jpg"/>
-                            <h3 class="u-gallery-title">奥运开幕在即 中国体操女队入场训练</h3>
-                            <p class="u-gallery-desc">
-                                8月4日,中国体操队队员范忆琳在赛前训练中。当日,中国体操女队队员在里约热内卢奥林匹克体育馆进行训练。里约奥运会体操比赛将于8月6日拉开战幕.
-                            </p>
-                            <button class="u-button u-button-info">查看更多</button>
-                        </a>
-                    </div>
-                </li>
-                <li class="u-col-md-4"  >
-                    <div class="u-gallery-item">
-                        <a href="">
-                            <img src="http://design.yyuap.com/static/img/desiner4.jpg"/>
-                            <h3 class="u-gallery-title">福原爱领衔日本乒乓球队训练备战</h3>
-                            <p class="u-gallery-desc">
-                                2016年8月5日，2016年里约奥运会，福原爱领衔日本乒乓球队训练备战。988年11月1日出生于日本宫城县仙台市，日本乒乓球运动员。2000年，成为历史上年龄最小的日本国家队成员.
-                            </p>
-                            <button class="u-button u-button-info">查看更多</button>
-                        </a>
-                    </div>
-                </li>
-                <li class="u-col-md-4"  >
-                    <div class="u-gallery-item">
-                        <a href="">
-                            <img src="http://design.yyuap.com/static/img/desiner5.jpg"/>
-                            <h3 class="u-gallery-title">英国场地自行车进行赛前训练</h3>
-                            <p class="u-gallery-desc">
-                                英国场地自行车女队 Great Britain Women's Track Cycling Team队员组成：维多利亚-彭德莱顿、杰西卡-瓦妮实、温迪-霍汶娜格尔、丹尼尔-金、乔安娜-罗斯尔、劳拉-特洛特.
-                            </p>
-                            <button class="u-button u-button-info">查看更多</button>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="u-widget" panelname="footer">
-            <div class="footer">
-                <div class="footer-text">
-                    <span>版权所有：用友网络科技股份有限公司 2016 京ICP备05007539号-7 京ICP证100714号 京公网安备1101080209224号</span>
-                </div>
-                <div class="footer-img">
-                    <img src="http://design.yyuap.com/static/img/bg-all.jpg">
-                </div>
-            </div>          
-        </div>    
-    </div>  
+    </div>
 </div>            
 </body>
 <script src="lib/jquery/jquery-1.9.1.min.js"></script>
