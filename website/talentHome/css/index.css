@@ -10,13 +10,13 @@ a:hover{
 }
 
 */
-.headContainer ul{
+.headContaineryy ul{
     list-style: none;
     height: auto;
     float: right;
     margin: 0 10px 0 0;
 }
-.headContainer ul li{
+.headContaineryy ul li{
     display: table-cell;
     padding: 5px 19px;
     height: 100%;
@@ -25,11 +25,11 @@ a:hover{
     color: #8e8e8e;
     border-top: 2px solid transparent;
 }
-.headContainer ul li:hover{
+.headContaineryy ul li:hover{
     border-color: #696969;
     color: #696969;
 }
-.headContainer ul li:hover a{
+.headContaineryy ul li:hover a{
     color: #000;
 }
 .header-wrapper{
@@ -39,7 +39,7 @@ a:hover{
     margin-right: auto;
     padding-bottom: 0;
 }
-.headContainer{
+.headContaineryy{
     position: relative;
     width: 100%;
     display: inline-block;
@@ -48,14 +48,14 @@ a:hover{
     display: none;
  }*/
 
-.headContainer .headerlogo{
+.headContaineryy .headerlogo{
     display: inline-block;
     /*margin-top: 19px;*/
     /*margin-left: 30px;*/
     margin-left: 15px;
     line-height: 50px;
 }
-.headContainer a {
+.headContaineryy a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -262,7 +262,7 @@ body {
 }
 
 .product-bot-icon {
-    width: 52px;
+    width: 53px;
     height: 52px;
     background: url("http://design.yyuap.com/static/img/icons-footer.png") 0 0 no-repeat;
 }
@@ -272,19 +272,19 @@ body {
 }
 
 .share {
-    background-position: 0 -52px;
+    background-position: 0 -53px;
 }
 
 .share:hover {
-    background-position: -52px -52px;
+    background-position: -53px -53px;
 }
 
 .manpower {
-    background-position: 0 -104px;
+    background-position: 1px -105px;
 }
 
 .manpower:hover {
-    background-position: -52px -104px;
+    background-position: -53px -104px;
 }
 
 .service {
@@ -544,9 +544,9 @@ textarea::-webkit-input-placeholder {
         /*width: 100%;
         display: block !important;*/
     }
-    .headContainer ul{
+    .headContaineryy ul{
     }
-    .headContainer ul li:hover {
+    .headContaineryy ul li:hover {
         background: #ececec;
         border-color: transparent;
     }
