@@ -82,10 +82,6 @@ body {
 
 
 
-.uf{
-    /*color: #fff;*/
-    /*font-size: 20px;*/
-}
 .banner-content{
     position: absolute;
     top: 5%;
@@ -381,7 +377,7 @@ body {
 }
 
 /*footer*/
-.footer {
+.footers {
     background: #1b2126;
 }
 

@@ -8,18 +8,20 @@
 
 
 
-    var $nav = $('.product-nav'),
-        iNavTop = $nav.offset().top;
+    var $nav = $('.product-nav');
 
-    $(window).on('scroll', function(){
-        var sTop = $(document).scrollTop();
-        console.log(sTop);
-        if(sTop > iNavTop){
-            $nav.addClass('fixed');
-        }else{
-            $nav.removeClass('fixed');
-        }
-    })
+    if($nav.length>0){
+        var iNavTop = $nav.offset().top;
 
+        $(window).on('scroll', function(){
+            var sTop = $(document).scrollTop();
+
+            if(sTop > iNavTop){
+                $nav.addClass('fixed');
+            }else{
+                $nav.removeClass('fixed');
+            }
+        })
+    }
 
 })(window, jQuery);
