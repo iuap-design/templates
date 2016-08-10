@@ -29,6 +29,9 @@ a:hover{
     border-color: #696969;
     color: #696969;
 }
+.headContainer ul li:hover a{
+    color: #000;
+}
 .header-wrapper{
     width: 100%;
     position: relative;
@@ -76,44 +79,16 @@ body {
     width: 100%;
     position: relative;
 }
-/*解决不同屏幕下，title的显示*/
-@media (max-width: 768px) {
-    .nav-toggle{
-        display: block;
-    }
-    .xs-hide{
-        visibility: hidden;
-        max-height: 0;
-        opacity: 0;
-        transition: all 400ms;
-    }
-    .xs-show{
-        visibility: visible;
-        opacity: 1;
-        max-height: 400px;
-        transition: all 400ms;
-    }
-    .nav-menu li{
-        /*width: 100%;
-        display: block !important;*/
-    }
-    .headContainer ul{
-        width: 100%;
-    }
-    .headContainer ul li:hover {
-        background: #ececec;
-        border-color: transparent;
-    }
-}
+
 
 
 .uf{
-    color: #fff;
-    font-size: 20px;
+    /*color: #fff;*/
+    /*font-size: 20px;*/
 }
 .banner-content{
     position: absolute;
-    top: 10px;
+    top: 5%;
     width: 100%;
 }
 .header {
@@ -173,8 +148,7 @@ body {
 }
 
 .info {
-    height: 250px;
-    width: 840px;
+    
     color: #fff;
     margin-top: 150px;
 }
@@ -215,17 +189,17 @@ body {
 #tab-panel-1 h1,
 #tab-panel-2 h1,
 #tab-panel-3 h1 {
-    padding: 88px 0 50px 0;
     font-size: 36px;
     color: #1aafde;
     text-align: center;
-    line-height: 36px;
+    margin-bottom: 32px;
 }
 #tab-panel-2 h1{
     padding-bottom:23px;
 }
 #tab-panel-1 {
-    height: 284px;
+    min-height: 220px;
+    padding-top: 2%;
 }
 
 #tab-panel-1 p {
@@ -233,6 +207,8 @@ body {
     color: #888;
     text-align: center;
     line-height: 14px;
+    line-height: 30px;
+    padding: 1% 6%;
 }
 
 /*product show*/
@@ -254,17 +230,18 @@ body {
 }
 
 .pro-bot-deti {
-    height: 170px;
-    width: 1110px;
     padding-top: 81px;
+    /*height: 170px;
+    width: 1110px;
+    
     margin-left: 50%;
     left: -555px;
-    position: absolute;
+    position: absolute;*/
 }
 
 .pro-bot-deti > div {
-    width: 260px;
-    height: 170px;
+    /*width: 260px;
+    height: 170px;*/
 }
 
 .u-media:first-child {
@@ -325,12 +302,8 @@ body {
 /*core-idea-panel*/
 .product-nav {
     justify-content: left;
-    -webkit-justify-content: flex-start;
-    height: 71px;
     border-bottom: 1px solid #d2d2d2;
     background: #fafafa;
-    width: 100%;
-    padding-left: 70px;
 }
 
 .product-nav.fixed {
@@ -340,12 +313,10 @@ body {
 }
 
 .product-nav a {
-    height: 71px;
     line-height: 71px;
     font-size: 18px;
     color: #acacac;
     text-decoration: none;
-    padding-left: 65px;
 }
 
 .core-panel {
@@ -354,9 +325,7 @@ body {
 }
 
 .idea {
-    width: 230px;
-    height: 252px;
-    margin-right: 120px;
+    text-align: center;
 }
 
 .idea .icon {
@@ -364,9 +333,10 @@ body {
     display: inline-block;
     height: 96px;
     width: 102px;
-    margin-left: 54px;
 }
-
+#tab-panel-3{
+    padding-top: 10%;
+}
 .idea .share {
     background-position: 0 -113px;
 }
@@ -421,7 +391,6 @@ body {
     font-weight: normal;
 }
 .contact{
-    width:1366px;
     margin:0 auto;
     padding-top:60px;
 }
@@ -556,4 +525,51 @@ textarea:-ms-input-placeholder {
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
     color: #3b444a;
+}
+
+/*解决不同屏幕下，title的显示*/
+@media (max-width: 768px) {
+    .nav-toggle{
+        display: block;
+    }
+    .xs-hide{
+        visibility: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 400ms;
+    }
+    .xs-show{
+        visibility: visible;
+        opacity: 1;
+        max-height: 400px;
+        transition: all 400ms;
+    }
+    .nav-menu li{
+        /*width: 100%;
+        display: block !important;*/
+    }
+    .headContainer ul{
+    }
+    .headContainer ul li:hover {
+        background: #ececec;
+        border-color: transparent;
+    }
+    .info h3{
+        font-size: 21px;
+    }
+    .info h1 {
+        font-size: 41px;
+    }
+    .center-a{
+        line-height: 36px;
+        width: 185px;
+        height: 36px;
+    }
+    #tab-panel-2 .product-bottom{
+        min-height: 470px;
+        background-repeat: repeat;
+    }
+    #tab-panel-3{
+        padding-top: 20%;
+    }
 }
