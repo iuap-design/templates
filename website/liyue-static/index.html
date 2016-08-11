@@ -30,16 +30,16 @@
                             <div class="header-wrapper xs-hide">
                                 <div class="headContainer">
                                     <div class="row">
-                                        <div class="u-col-md-3"><span class="headerlogo"> <img data-bind="attr: { src: logoImg}" src="http://design.yyuap.com/static/img/sprite-ui.png"> </span></div>
+                                        <div class="u-col-md-3"><span class="headerlogo"> <img src="http://design.yyuap.com/static/img/sprite-ui.png"> </span></div>
                                         <div class="u-col-md-9">
-                                            <ul data-bind="foreach: navlist" class="nav-menu">
-                                                <li data-bind="text: title">赛事日程</li>
+                                            <ul class="nav-menu">
+                                                <li>赛事日程</li>
                                             
-                                                <li data-bind="text: title">走进里约</li>
+                                                <li>走进里约</li>
                                             
-                                                <li data-bind="text: title">运动员风采</li>
+                                                <li>运动员风采</li>
                                             
-                                                <li data-bind="text: title">直播专区</li>
+                                                <li>直播专区</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -58,27 +58,27 @@
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
 
-                                <ol class="carousel-indicators" data-bind="foreach: carousels">
-                                    <li data-target="#carousel-example-generic" data-bind="attr: { 'data-slide-to': $index,class: $index() < 1? 'active':''}" data-slide-to="0" class="active"></li>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                 
-                                    <li data-target="#carousel-example-generic" data-bind="attr: { 'data-slide-to': $index,class: $index() < 1? 'active':''}" data-slide-to="1" class=""></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
                                 
-                                    <li data-target="#carousel-example-generic" data-bind="attr: { 'data-slide-to': $index,class: $index() < 1? 'active':''}" data-slide-to="2" class=""></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
                                 </ol>
-                                <div class="carousel-inner" role="listbox" data-bind="foreach: carousels">
-                                    <div class="item active" data-bind="css: { active:  $index() < 1 }">
-                                        <img data-bind="attr: { src: carouselImg, alt: carouselName }" src="http://design.yyuap.com/static/img/carousel-1.jpg" alt="carousel-1">
-                                        <div class="carousel-caption" data-bind="text: carouselName">carousel-1</div>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="http://design.yyuap.com/static/img/carousel-1.jpg" alt="carousel-1">
+                                        <div class="carousel-caption">carousel-1</div>
                                     </div>
                                 
-                                    <div class="item" data-bind="css: { active:  $index() < 1 }">
-                                        <img data-bind="attr: { src: carouselImg, alt: carouselName }" src="http://design.yyuap.com/static/img/carousel-2.jpg" alt="carousel-2">
-                                        <div class="carousel-caption" data-bind="text: carouselName">carousel-2</div>
+                                    <div class="item">
+                                        <img src="http://design.yyuap.com/static/img/carousel-2.jpg" alt="carousel-2">
+                                        <div class="carousel-caption">carousel-2</div>
                                     </div>
                                 
-                                    <div class="item" data-bind="css: { active:  $index() < 1 }">
-                                        <img data-bind="attr: { src: carouselImg, alt: carouselName }" src="http://design.yyuap.com/static/img/carousel-3.jpg" alt="carousel-3">
-                                        <div class="carousel-caption" data-bind="text: carouselName">carousel-3</div>
+                                    <div class="item">
+                                        <img src="http://design.yyuap.com/static/img/carousel-3.jpg" alt="carousel-3">
+                                        <div class="carousel-caption">carousel-3</div>
                                     </div>
                                 </div>
 
@@ -102,36 +102,36 @@
                 <div class="u-col-md-12">
                     <div class="widgetBox ui-sortable">
                         <div panelname="illustrate" class="u-widget u-drag ui-sortable-handle">
-                            <ul class="u-gallery u-row u-gallery-default" data-bind="foreach: newslist">
+                            <ul class="u-gallery u-row u-gallery-default" >
                                 <li class="u-col-md-4">
                                     <div class="u-gallery-item">
-                                        <a data-bind="attr: { href : textImg}" href="http://design.yyuap.com/static/img/desiner3.jpg">
-                                            <img data-bind="attr: { src : textImg, alt : title }" src="http://design.yyuap.com/static/img/desiner3.jpg" alt="奥运开幕在即 中国体操女队入场训练">
-                                            <h3 class="u-gallery-title" data-bind="text : title">奥运开幕在即 中国体操女队入场训练</h3>
-                                            <p class="u-gallery-desc" data-bind="text : textContext">8月4日,中国体操队队员范忆琳在赛前训练中。当日,中国体操女队队员在里约热内卢奥林匹克体育馆进行训练。里约奥运会体操比赛将于8月6日拉开战幕.</p>
-                                            <button class="u-button u-button-info" data-bind="text : buttonText" data-upgraded=",u.Button">查看更多<span class="u-button-container"><span class="u-ripple"></span></span></button>
+                                        <a href="http://design.yyuap.com/static/img/desiner3.jpg">
+                                            <img src="http://design.yyuap.com/static/img/desiner3.jpg" alt="奥运开幕在即 中国体操女队入场训练">
+                                            <h3 class="u-gallery-title">奥运开幕在即 中国体操女队入场训练</h3>
+                                            <p class="u-gallery-desc">8月4日,中国体操队队员范忆琳在赛前训练中。当日,中国体操女队队员在里约热内卢奥林匹克体育馆进行训练。里约奥运会体操比赛将于8月6日拉开战幕.</p>
+                                            <button class="u-button u-button-info" data-upgraded=",u.Button">查看更多<span class="u-button-container"><span class="u-ripple"></span></span></button>
                                         </a>
                                     </div>
                                 </li>
                             
                                 <li class="u-col-md-4">
                                     <div class="u-gallery-item">
-                                        <a data-bind="attr: { href : textImg}" href="http://design.yyuap.com/static/img/desiner4.jpg">
-                                            <img data-bind="attr: { src : textImg, alt : title }" src="http://design.yyuap.com/static/img/desiner4.jpg" alt="福原爱领衔日本乒乓球队训练备战">
-                                            <h3 class="u-gallery-title" data-bind="text : title">福原爱领衔日本乒乓球队训练备战</h3>
-                                            <p class="u-gallery-desc" data-bind="text : textContext">2016年8月5日，2016年里约奥运会，福原爱领衔日本乒乓球队训练备战。988年11月1日出生于日本宫城县仙台市，日本乒乓球运动员。2000年，成为历史上年龄最小的日本国家队成员。</p>
-                                            <button class="u-button u-button-info" data-bind="text : buttonText" data-upgraded=",u.Button">查看更多<span class="u-button-container"><span class="u-ripple"></span></span></button>
+                                        <a href="http://design.yyuap.com/static/img/desiner4.jpg">
+                                            <img src="http://design.yyuap.com/static/img/desiner4.jpg" alt="福原爱领衔日本乒乓球队训练备战">
+                                            <h3 class="u-gallery-title">福原爱领衔日本乒乓球队训练备战</h3>
+                                            <p class="u-gallery-desc">2016年8月5日，2016年里约奥运会，福原爱领衔日本乒乓球队训练备战。988年11月1日出生于日本宫城县仙台市，日本乒乓球运动员。2000年，成为历史上年龄最小的日本国家队成员。</p>
+                                            <button class="u-button u-button-info" data-upgraded=",u.Button">查看更多<span class="u-button-container"><span class="u-ripple"></span></span></button>
                                         </a>
                                     </div>
                                 </li>
                             
                                 <li class="u-col-md-4">
                                     <div class="u-gallery-item">
-                                        <a data-bind="attr: { href : textImg}" href="http://design.yyuap.com/static/img/desiner5.jpg">
-                                            <img data-bind="attr: { src : textImg, alt : title }" src="http://design.yyuap.com/static/img/desiner5.jpg" alt="英国场地自行车进行赛前训练">
-                                            <h3 class="u-gallery-title" data-bind="text : title">英国场地自行车进行赛前训练</h3>
-                                            <p class="u-gallery-desc" data-bind="text : textContext">英国场地自行车女队 Great Britain Women's Track Cycling Team队员组成：维多利亚-彭德莱顿、杰西卡-瓦妮实、温迪-霍汶娜格尔、丹尼尔-金、乔安娜-罗斯尔、劳拉-特洛特.</p>
-                                            <button class="u-button u-button-info" data-bind="text : buttonText" data-upgraded=",u.Button">查看更多<span class="u-button-container"><span class="u-ripple"></span></span></button>
+                                        <a href="http://design.yyuap.com/static/img/desiner5.jpg">
+                                            <img src="http://design.yyuap.com/static/img/desiner5.jpg" alt="英国场地自行车进行赛前训练">
+                                            <h3 class="u-gallery-title">英国场地自行车进行赛前训练</h3>
+                                            <p class="u-gallery-desc">英国场地自行车女队 Great Britain Women's Track Cycling Team队员组成：维多利亚-彭德莱顿、杰西卡-瓦妮实、温迪-霍汶娜格尔、丹尼尔-金、乔安娜-罗斯尔、劳拉-特洛特.</p>
+                                            <button class="u-button u-button-info" data-upgraded=",u.Button">查看更多<span class="u-button-container"><span class="u-ripple"></span></span></button>
                                         </a>
                                     </div>
                                 </li>
@@ -145,12 +145,12 @@
                 <div class="u-col-md-12">
                     <div class="widgetBox ui-sortable">
                         <div panelname="footer" class="u-widget u-drag ui-sortable-handle">
-                            <div class="footer" data-bind="foreach: footers">
+                            <div class="footer">
                                 <div class="footer-text">
-                                    <span data-bind="text:footerInfo">版权所有：用友网络科技股份有限公司 2016 京ICP备05007539号-7 京ICP证100714号 京公网安备1101080209224号</span>
+                                    <span>版权所有：用友网络科技股份有限公司 2016 京ICP备05007539号-7 京ICP证100714号 京公网安备1101080209224号</span>
                                 </div>
                                 <div class="footer-img">
-                                    <img data-bind="attr: { src: footerImg}" src="http://design.yyuap.com/static/img/bg-all.jpg">
+                                    <img src="http://design.yyuap.com/static/img/bg-all.jpg">
                                 </div>
                             </div>
                             
