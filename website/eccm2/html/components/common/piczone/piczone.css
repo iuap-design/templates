@@ -111,6 +111,7 @@
     line-height: 20px;
     text-align: center;
     background: rgba(221,221,221,0.4);
+    margin: 0;
 }
 
 .ec-pics-showbox ul li:hover .ec-pics-showbox-del {
