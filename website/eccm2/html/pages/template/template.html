@@ -54,7 +54,6 @@
   <script src="../../components/common/steps/steps.js"></script>
 	<script src="../../components/common/navmenu/navmenu.js"></script>
 	<script src="../../components/common/gridComp/gridComp.js"></script>
-	<script src="../../components/common/pagination/pagination.js"></script>
 	<script src="../../components/common/combox/combox.js"></script>
 	<script src="../../components/common/validate/validate.js"></script>
 	<script src="../../components/common/dialog/dialog.js"></script>
@@ -425,9 +424,110 @@
 		<div options='{"field":"currency","dataType":"String","title":"金额"}'></div>
 	</div>
 </div>
-
+<script>
+	u.on(window, 'load', function() {
+		viewModel = {
+			dataTable: new u.DataTable({
+				meta: {
+					"name": "",
+					"time": "",
+					"distance": "",
+					"currency": ""
+				}
+			}, this),
+		};
+		var app = u.createApp({
+		    el: '#girdComp',
+		    model: viewModel
+		});
+		var data = {
+			"pageIndex": 1,
+			"pageSize": 10,
+			"rows": [{
+				"status": "nrm",
+				"data": {
+					"name": "赵四",
+					"time": "2016-05-16",
+					"distance": "25",
+					"currency": {
+						"value": "200.00",
+						"meta": {
+							"precision": "2",
+							"max": "3000",
+							"min": "0",
+							"curSymbol": "$"
+						}
+					}
+				}
+			}, {
+				"status": "nrm",
+				"data": {
+					"name": "王一",
+					"time": "2016-05-12",
+					"distance": "25",
+					"currency": {
+						"value": "200.00",
+						"meta": {
+							"precision": "2",
+							"max": "3000",
+							"min": "0",
+							"curSymbol": "$"
+						}
+					}
+				}
+			}, {
+				"status": "nrm",
+				"data": {
+					"name": "李三",
+					"time": "2016-11-16",
+					"distance": "50",
+					"currency": {
+						"value": "300.00",
+						"meta": {
+							"precision": "2",
+							"max": "3000",
+							"min": "0",
+							"curSymbol": "$"
+						}
+					}
+				}
+			}, {
+				"status": "nrm",
+				"data": {
+					"name": "彰武",
+					"time": "2012-05-16",
+					"distance": "50",
+					"currency": {
+						"value": "300.00",
+						"meta": {
+							"precision": "2",
+							"max": "3000",
+							"min": "0",
+							"curSymbol": "$"
+						}
+					}
+				}
+			}]
+		}
+		viewModel.dataTable.removeAllRows();
+		viewModel.dataTable.setData(data);
+	
+	})
+</script>
   <h4> 分页 </h4>
   <div class='u-pagination'></div>
+<script>
+	u.on(window, 'load', function() {
+		// 分页
+		var pagination = document.querySelector('.u-pagination')['u.pagination'];
+		pagination.update({
+			totalPages: 100,
+			pageSize: 20,
+			currentPage: 1,
+			totalCount: 200
+		});
+	})
+</script>
   <h4> 对话框 </h4>
   <button id="msgDialogBtn3" class="u-button raised accent">模态框</button>
 <div id="dialog_content" style="display:none;">

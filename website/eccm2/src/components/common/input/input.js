@@ -2,21 +2,13 @@ ec.Text = u.Text.extend({
     init: function(){
     	ec.Text.superclass.init.apply(this, arguments);
 
-        u.on(this._input, 'keydown', this._keydownHandler.bind(this));
-		u.on(this._input, 'keyup', this._keyupHandler.bind(this));
+        // u.on(this._input, 'keydown', this._keydownHandler.bind(this));
+
     },
     _keydownHandler: function (event) {
         if (event.keyCode === 13) {
            this._input.blur();
         }
-        this.trigger('u.text.keydown');
-    },
-    _keyupHandler: function (event) {
-        this.trigger('u.text.keyup');
-    },
-     _blur : function (event) {
-        u.removeClass(this.element, this._CssClasses.IS_FOCUSED);
-        this.trigger('u.text.blur');
     },
 
 
@@ -29,7 +21,7 @@ u.compMgr.regComp({
 })
 
 ec.TextFieldAdapter = u.TextFieldAdapter.extend({
-    
+
     initialize: function (options) {
         u.TextFieldAdapter.superclass.initialize.apply(this, arguments);
         var dataType = this.dataModel.getMeta(this.field,'type') || 'string';
