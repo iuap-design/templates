@@ -134,6 +134,16 @@ footer{
 #pageleft .main-body{
     padding: 85px 60px;
 }
+.page-login-main-new{
+    margin: 20px 0;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #757575;
+    background: #fff;
+    text-align: left;
+
+}
 #pagecenter:before{
     background: #3949ab;
 }
@@ -158,4 +168,15 @@ footer{
 }
 #pagecenter footer{
     margin-left: 43%;
+}
+.contentLeftText{
+    padding-left: 5%;
+    padding-top: 20%;
+
+}
+.mainBodyText{
+    color: #757575;
+    background: #fff;
+    padding: 30px 40px 80px;
+    margin-top: 20px;
 }
