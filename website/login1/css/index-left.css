@@ -11,7 +11,7 @@ body.layout-full {
     height: 100%;
 }
 .page-logo:before {
-    background-image: url("../img/login.png");
+    background-image: url("http://design.yyuap.com/static/img/bg-gary-1.jpg");
 }
 .page-logo.page-dark.layout-full:after {
     background-color: rgba(38, 50, 56, .6);
