@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>登录</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,   maximum-scale=1.0,   user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <link rel="stylesheet" type="text/css" href="http://design.yyuap.com/static/uui-original/1.0.2/css/u.min.css">
     <link rel="stylesheet" href="http://design.yyuap.com/static/uui-original/1.0.2/css/u-extend.min.css">
-    <link rel="stylesheet" href="http://design.yyuap.com/static/uui-original/1.0.2/fonts/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-extend.css"/>
+    <link rel="stylesheet" href="css/index-left.css">
 
 </head>
-<body class="page-login layout-full page-dark" id="pageleft">
-<div class="container-fluid">
+<body class="page-logo layout-full page-dark">
 
-    <div class="row">
-
-        <div class="col-md-8 contentLeftText">
-
-            <div class="brand ">
+<div class="page animsition">
+    <div class="page-content">
+        <div class="page-brand-info">
+            <div class="brand">
                 <img class="brand-img" src="img/logo.png" alt="...">
-                <span class="brand-text font-size-40">Remark</span>
+                <h2 class="brand-text font-size-40">Remark</h2>
             </div>
-            <p class="font-size-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-
+            <p class="font-size-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-
-        <div class="col-md-4">
-                <div class="mainBodyText">
-                    <div class="brand">
-                        <h2 class="brand-text">登陆</h2>
+        <div class="page-logo-main">
+            <div class="brand visible-xs">
+                <img class="brand-img" src="img/logo-blue.png" alt="...">
+                <h3 class="brand-text font-size-40 markTextShow">Remark</h3>
+            </div>
+            <h3 class="font-size-24">登陆</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <form method="post" action="login.html">
+                <div class="form-group form-material floating">
+                    <div class="u-text">
+                        <input class="u-input"/>
+                        <label class="u-label">名字:</label>
                     </div>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <form method="post" action="login.html">
-                        <div class="form-group form-material floating">
-                            <div class="u-text">
-                                <input class="u-input"/>
-                                <label class="u-label">名字:</label>
-                            </div>
-                        </div>
-                        <div class="form-group form-material floating">
-                            <div class="u-text">
-                                <input class="u-input"/>
-                                <label class="u-label">邮箱:</label>
-                            </div>
-                        </div>
-                        <div class="form-group form-material floating">
-                            <div class="u-text">
-                                <input class="u-input"/>
-                                <label class="u-label">密码:</label>
-                            </div>
-                        </div>
-                        <div class="form-group clearfix">
-                            <label  class="u-checkbox">
-                                <input type="checkbox" class="u-checkbox-input" checked>
-                                <span class="u-checkbox-label">记住我</span>
-                            </label>
-                            <a class="pull-right" href="forgot-password.html">忘记密码?</a>
-                        </div>
-                        <button class="u-button raised primary u-button-block">登陆</button>
-                    </form>
-                    <p>没有账户?<a href="register.html">注册</a></p>
-
-                    <footer class="page-copyright page-copyright-inverse">
-                        <p>WEBSITE BY iUAP design</p>
-                        <p>© 2016. All RIGHT RESERVED.</p>
-                        <div class="social">
-                            <a href="javascript:void(0)">
-                                <i class="icon bd-twitter" aria-hidden="true"></i>
-                            </a>
-                            <a href="javascript:void(0)">
-                                <i class="icon bd-facebook" aria-hidden="true"></i>
-                            </a>
-                            <a href="javascript:void(0)">
-                                <i class="icon bd-dribbble" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </footer>
                 </div>
+                <div class="form-group form-material floating">
+                    <div class="u-text">
+                        <input class="u-input"/>
+                        <label class="u-label">邮箱:</label>
+                    </div>
+                </div>
+                <div class="form-group form-material floating">
+                    <div class="u-text">
+                        <input class="u-input"/>
+                        <label class="u-label">密码:</label>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label  class="u-checkbox">
+                        <input type="checkbox" class="u-checkbox-input" checked>
+                        <span class="u-checkbox-label">记住我</span>
+                    </label>
+                    <a class="pull-right" href="forgot-password.html">忘记密码?</a>
+                </div>
+                <button class="u-button raised primary u-button-block">登陆</button>
+            </form>
+            <p>没有账户?<a href="register.html">注册</a></p>
+            <footer class="page-copyright page-copyright-inverse">
+                <p>WEBSITE BY iUAP design</p>
+                <p>© 2016. All RIGHT RESERVED.</p>
+                <div class="social">
+                    <a href="javascript:void(0)">
+                        <i class="icon bd-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i class="icon bd-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i class="icon bd-dribbble" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </footer>
         </div>
     </div>
 </div>
