@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <!--360 使用Google Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>云门户</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/3.0.6/css/u.css">
+    <link type="text/css" rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./swiper/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="swiper/swiper-3.3.1.min.css">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body class="dashboard site-navbar-small site-menubar-fd">
+
+<!-- menubar -->
+<nav class="u-navbar navbar-fixed-top navbar-default navbar-portal">
+    <div class="u-container-fluid ">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="u-navbar-header" style="float: left;">
+            <button aria-expanded="true" data-target=".side-page" data-toggle="collapse"
+                    class="navbar-toggle side-page navbar-toggle-button collapse in" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="dropdown ">
+                    <a role="button" id="demo-menu-lower-right6" aria-expanded="false" href="javascript:void (0);"
+                       data-toggle="dropdown" class="navbar-avatar dropdown-toggle">
+                        <span class="avatar avatar-online"> <img src="./img/normaluser.png"></span>
+                        <span class="avatar-name">普通用户</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="u-menu" for="demo-menu-lower-right6">
+                        <li class="u-menu-item">管理中心</li>
+                        <li class="u-menu-item">个性化</li>
+                        <li class="u-menu-item hide">个人设置</li>
+                        <li class="divider-line "></li>
+                        <li class="u-menu-item">退出</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<!-- menubar end-->
+<!-- sidebar -->
+<div class="site-menubar sidebar-left side-page collapse" aria-expanded="false" style="height: 10px;">
+    <div class="site-menubar-inner">
+        <ul class="menubar">
+            <li class="active" isindex="true"><a urltype="view" ahref="##sysmgr"><i class="icon iconfont  icon-home"></i><span
+                    class="icon-name">首页</span></a></li>
+            <li class="">
+                <a urltype="null" href="javascript:void(0);">
+                    <i class=" icon iconfont  icon-appicon"> </i>
+                    <span class="icon-name">应用中心<span class="icon wb-chevron-right-mini"></span></span>
+                </a>
+            </li>
+            <li><a urltype="url"><i class="icon iconfont icon-systemmanagement"></i><span class="icon-name">OA协同</span></a></li>
+            <li><a urltype="url" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span
+                    class="icon-name">全面预算<span class="icon wb-chevron-right-mini"></span></span></a>
+            </li>
+            <li><a urltype="url" ahref="#/yuncai/workbench#/pages/order/purorder"><i class="uf uf-inbox"></i><span
+                    class="icon-name">决策支持系统</span></a></li>
+            <li><a urltype="url" target="_blank" href="http://www.baidu.com/"><i class="uf uf-inbox"></i><span class="icon-name">主数据管理平台</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">经营数据报送平台</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">国际贸易ERP</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">通讯录维护</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">主数据管理平台</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">经营数据报送平台</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">国际贸易ERP</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">通讯录维护</span></a></li>
+        </ul>
+        <div class="menubar-footer" style="display: block;"><a href="javascript:;" class="arrow-up lock"><i
+                class=" uf uf-uparrow"></i></a><a href="javascript:;" class="arrow-down"><i
+                class="uf uf-anglearrowdown"></i></a></div>
+
+    </div>
+</div>
+<!-- sidebar  end-->
+<!-- Page -->
+<div class="page side-page collapse" aria-expanded="false" style="height: 40px;">
+    <div class="container-fluid md-skin">
+        <div id="wrapper">
+            <!--主内容区域-->
+            <div id="page-wrapper" class="gray-bg">
+                <!--内容区-->
+                <div class=" ">
+                    <div class="swiper-container width-full padding-bottom-30" id="widgettop">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-no-swiping">
+                                <img src="./img/01.jpg" class="img-responsive u-container">
+                                <span class="swiper-text" style="display: none">全球配置资源,倾心关爱生命</span>
+                            </div>
+                            <div class="swiper-slide swiper-no-swiping">
+                                <img src="./img/02.jpg" class="img-responsive u-container">
+                                <span class="swiper-text" style="display: none">独具国际化和协同力双引擎驱动的产业群组合优势</span>
+                            </div>
+                            <div class="swiper-slide swiper-no-swiping">
+                                <img src="./img/03.jpg" class="img-responsive u-container">
+                                <span class="swiper-text" style="display: none">打造科工贸一体化的大型医药健康产业集团</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-row padding-bottom-30" id="widgetbox">
+                        <div class="u-col-4 ui-grid">
+                            <div class="radius-panel " id="communiAll">
+                                <div class="radius-panel-top">
+                                    <a target="_blank" id="searchIcon"> <i class="mehecofont iconfont icon-sousuo2"></i></a>
+                                </div>
+                                <div class="radius-panel-bottom">
+                                    <label>中国医药通讯录</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-col-4 ui-grid">
+                            <!--<a target="_blank" href="http://baidu.com/"><img src="img/2.png"> </a>-->
+                            <div class="radius-panel " id="Application">
+                                <div class="radius-panel-top">
+                                    <a target="_blank"> <i class="mehecofont iconfont icon-shenqing"></i></a>
+                                </div>
+                                <div class="radius-panel-bottom">
+                                    <label>业务系统权限申请</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-col-4 ui-grid">
+                            <!--<a target="_blank" href="http://baidu.com/"><img src="img/3.png"> </a>-->
+                            <div class="radius-panel" id="emailAll">
+                                <div class="radius-panel-top width-full"><span class="pull-left email">未读邮件</span>
+                                    <a target="_blank" href="#" data-bind="">
+                                        <span class="pull-right num" data-bind="">1</span>
+                                    </a>
+                                </div>
+                                <div class="radius-panel-bottom">
+                                    <label>邮件系统</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="widgetpanel">
+                        <div class="u-row   ">
+                            <div class="u-col-6 ui-grid">
+                                <div class="oa-task width-full" id="oaApprove">
+                                    <div class="u-panel">
+                                        <div class="u-panel-heading clearfix">
+                                            <span class="pull-left"><strong>OA待办审批1</strong></span>
+                                            <ul class="pull-right height-full OAsc">
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="unread" data-bind="">待办审批</a>
+                                                </li>
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="incoming"
+                                                                               data-bind="">收文审批</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="u-panel-body">
+                                            <div u-meta=''>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-col-6 ui-grid">
+                                <div class="oa-task width-full" id="oaApprove2">
+                                    <div class="u-panel">
+                                        <div class="u-panel-heading clearfix">
+                                            <span class="pull-left"><strong>OA待办审批2</strong></span>
+                                            <ul class="pull-right height-full OAsc">
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="unread" data-bind="">待办审批</a>
+                                                </li>
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="incoming"
+                                                                               data-bind="">收文审批</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="u-panel-body">
+                                            <div u-meta=''>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-row ">
+                            <div class="u-col-6 ui-grid">
+                                <div class="oa-task width-full" id="oaApprove3">
+                                    <div class="u-panel">
+                                        <div class="u-panel-heading clearfix">
+                                            <span class="pull-left"><strong>OA待办审批3</strong></span>
+                                            <ul class="pull-right height-full OAsc">
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="unread" data-bind="">待办审批</a>
+                                                </li>
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="incoming"
+                                                                               data-bind="">收文审批</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="u-panel-body">
+                                            <div u-meta=''>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-col-6 ui-grid">
+                                <div class="oa-task width-full" id="oaApprove4">
+                                    <div class="u-panel">
+                                        <div class="u-panel-heading clearfix">
+                                            <span class="pull-left"><strong>OA待办审批4</strong></span>
+                                            <ul class="pull-right height-full OAsc">
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="unread" data-bind="">待办审批</a>
+                                                </li>
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="incoming"
+                                                                               data-bind="">收文审批</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="u-panel-body">
+                                            <div u-meta=''>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-row  ">
+                            <div class="u-col-6 ui-grid">
+                                <div class="oa-task width-full" id="oaApprove5">
+                                    <div class="u-panel">
+                                        <div class="u-panel-heading clearfix">
+                                            <span class="pull-left"><strong>OA待办审批5</strong></span>
+                                            <ul class="pull-right height-full OAsc">
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="unread" data-bind="">待办审批</a>
+                                                </li>
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="incoming"
+                                                                               data-bind="">收文审批</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="u-panel-body">
+                                            <div u-meta=''>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-col-6 ui-grid">
+                                <div class="oa-task width-full" id="oaApprove6">
+                                    <div class="u-panel">
+                                        <div class="u-panel-heading clearfix">
+                                            <span class="pull-left"><strong>OA待办审批6</strong></span>
+                                            <ul class="pull-right height-full OAsc">
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="unread" data-bind="">待办审批</a>
+                                                </li>
+                                                <li class="pull-left title"><a href="javaScript:void(0)"
+                                                                               searchType="incoming"
+                                                                               data-bind="">收文审批</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="u-panel-body">
+                                            <div u-meta=''>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                                <div options=''></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="toolbar" style="display: none"></div>
+</div>
+<!-- End Page -->
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/jquery/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src='//design.yyuap.com/static/uui/3.0.6/js/u.js'></script>
+<script src="./swiper/swiper-3.3.1.min.js"></script>
+<script src="./swiper/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src='js/sidebar.js'></script>
+<script type="text/javascript" src='js/collpase.js'></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+
+
+<script type="text/javascript">
+    u.on(window, 'load', function () {
+        var bar = new sidebar('.menubar');
+        /*轮播*/
+        pageInit = function () {
+            $('.swiper-text').eq(1).fadeIn(300);
+            setTimeout(function () {
+                $('.swiper-text').eq(1).fadeOut(300).end().eq(2).hide(300);
+            }, 3000);
+            var mySwiper = new Swiper('.swiper-container', {
+                loop: true,
+                effect: 'fade',
+                autoplay: 3000,
+                onTransitionStart: function () {
+                    setTimeout(function () {
+                        $('.swiper-slide').each(function (i, v) {
+                            if ($(v).hasClass('swiper-slide-active')) {
+                                $(v).find('.swiper-text').fadeIn(300);
+                            }
+                        });
+                    }, 1000);
+                    setTimeout(function () {
+                        $('.swiper-slide').each(function (i, v) {
+                            if ($(v).hasClass('swiper-slide-active')) {
+                                $(v).find('.swiper-text').fadeOut(300);
+                            }
+                        });
+                    }, 3000)
+                }
+            });
+        };
+        pageInit();
+
+
+    });
+</script>
+</body>
+
+</html>
