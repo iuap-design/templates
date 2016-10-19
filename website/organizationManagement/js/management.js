@@ -84,5 +84,4 @@ var data = {
     ]
 }
 viewModel.dataTable.setData(data);
-// 展开tree
-$("#tree2")[0]['u-meta'].tree.expandAll(true);
+
