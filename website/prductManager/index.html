@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)http://123.103.9.199/workbench/#/ifr/%252Fyuncai%252Fworkbench%2523%252Fpages%252Frequirement%252Frequirelist%252F0 -->
+<html style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <!--360 使用Google Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>商品列表</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/3.0.6/css/u.css">
+    <link type="text/css" rel="stylesheet" href="font/iconfont.css">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body class="dashboard site-navbar-small site-menubar-fd">
+    <!-- menubar -->
+    <nav class="navbar cloud navbar-fixed-top navbar-default navbar-portal">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button aria-expanded="true" data-target=".side-page" data-toggle="collapse" class="navbar-toggle side-page navbar-toggle-button collapse in" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div  class="collapse navbar-collapse navbar-left">
+                <ul class="nav navbar-nav ">
+                    <li class=""><a href="#"> <img src="http://design.yyuap.com/static/img/designer/logo2x.png" width="110px"></a></li>
+                </ul>
+            </div>
+            <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="yc-dropdown">
+                        <a urltype="url"><i class="uf uf-envelope "></i></a>
+                    </li>
+                    <li class="im-dropdown ">
+                        <a urltype="url"><i class="uf uf-bellmusicaltool "></i></a>
+                    </li>
+                    <li class="iputoptitle"><a>云采门户</a></li>
+                    <li class="iputoptitle"><a>云采超市</a></li>
+                    <li class="dropdown tips hide" role="presentation">
+                        <a class="dropdown-toggle udefine" data-toggle="dropdown" href="javascript:void (0);" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon iconfont"></i>
+                            <span class="badge label-danger udefine">11</span>
+                        </a>
+                        <div class="dropdown-menu" style="min-width: 200px;padding: 0;border:none">
+                            <ul class="  list-group" style="margin-bottom: 0">
+                                <li class="list-group-item"><span class="badge label-danger">4</span> <span class="label label-warning">消息:</span> Cras justo odio
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-info">待办:</span> Dapibus ac facilisis in
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-info">审批:</span> Morbi leo risus
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-warning">消息:</span> Porta ac consectetur ac
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">4</span> <span class="label label-warning">消息:</span> Vestibulum at eros
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a role="button" id="username" aria-expanded="false" href="javascript:void (0);" data-toggle="dropdown" class="navbar-avatar dropdown-toggle">
+                            <span class="avatar avatar-online"> <img src="./img/user.png"></span>
+                            <span class="avatar-name">Gary</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li role="presentation">
+                                <a role="menuitem">
+                                    <i aria-hidden="true" class="icon wb-user"></i> 管理中心
+                                </a>
+                            </li>
+                            <li role="presentation" class="hide">
+                            </li>
+                            <li style="display: none;">
+                                <a href="javascript:;" id="design">
+                                    <i class="portalfont icon-personalized"></i>个性化
+                                </a>
+                            </li>
+                            <li class="wbsettings" role="presentation">
+                                <a role="menuitem"> <i aria-hidden="true" class="icon wb-settings"></i> 个人设置
+                                </a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem"><i aria-hidden="true" class="icon wb-power"></i> 退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- menubar end-->
+    <!-- sidebar -->
+    <div class="site-menubar sidebar-left side-page collapse" aria-expanded="false" style="height: 10px;">
+        <div class="site-menubar-inner">
+             <ul class="menubar">
+                <li class="active" isindex="true"><a urltype="view" ahref="##sysmgr"><i class="uf uf-inbox"></i><span class="icon-name">首页</span></a></li>
+                 <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">应用中心</span></a></li>
+                 <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">资源管理</span></a></li>
+                 <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购执行</span></a></li>
+                 <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">商品管理</span></a></li>
+                 <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">物料管理</span></a></li>
+                 <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">商品管理</span></a></li>
+                 <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">物料管理</span></a></li>
+                 <li><a urltype="url" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">询比价<span class="icon wb-chevron-right-mini"></span></span></a></li>
+                <li><a urltype="url" ahref="#/yuncai/workbench#/pages/order/purorder"><i class="uf uf-inbox"></i><span class="icon-name">采购订单</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购对账</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购发票</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">报价</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">发货管理</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">到货查询</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">入库查询</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">销售交易查询</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">销售订单查询</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购发票查询</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">供应商管理</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">企业用户管理</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">组织部门人员</span></a></li>
+                <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">企业信息管理</span></a></li>
+                <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">基础信息维护<span class="icon wb-chevron-right-mini"></span></span></a>
+                    <div class="menubar-menu ">
+                        <ul>
+                            <li><a urltype="url">超市目录</a></li>
+                            <li><a urltype="url">物料分类</a></li>
+                            <li><a urltype="url">物料管理</a></li>
+                            <li><a urltype="url">商品管理</a></li>
+                            <li><a urltype="url">商品分类</a></li>
+                            <li><a>供应商分类管理</a></li>
+                            <li><a>ERP数据维护</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">1688配置<span class="icon wb-chevron-right-mini"></span></span></a>
+                    <div class="menubar-menu ">
+                        <ul>
+                            <li><a>1688消息处理</a></li>
+                            <li><a>1688授权登录</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">审批流设置<span class="icon wb-chevron-right-mini"></span></span></a>
+                    <div class="menubar-menu ">
+                        <ul>
+                            <li><a>审批流用户同步</a></li>
+                            <li><a>审批流设计</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a><i class="uf uf-inbox"></i><span class="icon-name">我的网关</span></a></li>
+                <li><a><i class="uf uf-inbox"></i><span class="icon-name">网关安全中心</span></a></li>
+            </ul>
+            <div class="menubar-footer" style="display: block;"><a href="javascript:;" class="arrow-up lock"><i class=" uf uf-uparrow"></i></a><a href="javascript:;" class="arrow-down"><i class="uf uf-anglearrowdown"></i></a></div>
+        </div>
+    </div>
+    <!-- sidebar  end-->
+    <!-- Page -->
+    <div class="page">
+        <div class="container-fluid">
+            <div class="u-row">
+                <div class="u-col-md-12 ibox-m-title">
+                    <ol class="u-breadcrumb clearfix">
+                        <li><a class="u-link" href="javascript:void(0)">首页</a></li>
+                        <li class="active">商品管理</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="ibox-filter">
+                <div class="ibox-filter-title pull-left">
+                    <span>商品管理</span>
+                </div>
+                <div class="pull-right">
+                       <button class="u-button raised u-button-info u-right m-r-sm ">
+                           <i class="uf uf-plusblacksymbol ">  发布商品</i>
+                       </button>
+
+                </div>
+            </div>
+            <div class="ibox-filter self-paddingBottom">
+                <div class="u-row">
+                    <div class="u-col-xs-12 u-col-sm-3">
+                        <div class="u-combo self-div-inlint">
+                            <div class="u-input-group u-has-feedback">
+                                <input class="u-form-control self-div-inlint" />
+                                <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="u-col-xs-12 u-col-sm-2">
+                        <div class="u-combo self-div-inlint" id="">
+                            <div class="u-input-group u-has-feedback">
+                                <input class="u-form-control self-div-inlint" />
+                                <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="u-col-xs-12 u-col-sm-2">
+                        <div class="">
+                            <div class="u-input-group u-has-feedback" style="width:100%">
+                                <input type="text" class="u-form-control" id="exampleInput10" placeholder="请输入商品关键字">
+                                <span class="u-form-control-feedback uf uf-magnifyingglass"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- <div class="ibox-filter self-paddingBottom">
+                <div class="u-row">
+                    <div class="u-col-xs-12 u-col-sm-3">
+                        <div class="u-tabs__tab-bar">
+                            <a href="#tab-panel-1-1" class="u-tabs__tab is-active">全部商品</a>
+                            <a href="#tab-panel-1-2" class="u-tabs__tab">未上架商品</a>
+                            <a href="#tab-panel-1-3" class="u-tabs__tab">销售中商品</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>-->
+            <div class="ibox-filter self-paddingBottom">
+                <div class="u-row">
+                    <div class="u-tabs u-padding-horizontal-15 margin-bottom-10">
+                        <div class="u-tabs__tab-bar self-margin-product pull-left">
+                            <a href="#tab-panel-1-1" class="u-tabs__tab is-active">全部商品</a>
+                            <a href="#tab-panel-1-2" class="u-tabs__tab">未上架商品</a>
+                            <a href="#tab-panel-1-3" class="u-tabs__tab">销售中商品</a>
+                        </div>
+                        <div class="u-tabs__panel is-active" id="tab-panel-1-1">
+                            <table class="u-table table-fixedheader" style="width:100%;">
+                                <thead>
+                                <tr>
+                                    <td width="5%">&nbsp;</td>
+                                    <td width="9%">商品</td>
+                                    <td width="23%">&nbsp;</td>
+                                    <td width="15%" class="text-center">分类</td>
+                                    <td width="15%" class="text-left">到期时间</td>
+                                    <td width="15%" class="text-center">状态</td>
+                                    <td width="15%" class="text-center">操作</td>
+                                </tr>
+                                </thead>
+                            </table>
+                            <div class="table-fixedheader-body">
+                                <table class="u-table" style="width:100%;">
+                                    <tbody >
+                                    <tr>
+                                        <td>
+                                            <label class="u-checkbox only-style" >
+                                                <input type="checkbox" class="u-checkbox-input">
+                                                <span class="u-checkbox-label"></span>
+                                            </label>
+                                        </td>
+                                        <td >
+                                            <div class="">
+                                                <a data-bind="{attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value}}" href="#/pages/product_manager/productviewinfo?id=71744"> <img alt="未上传图片" data-bind="{attr:{src : p.ref('imgUrl')()+'@60w'}}" src="http://oss-yc-dev.img-cn-beijing.aliyuncs.com/publictenant/c8f9bece-2c44-4120-989c-e12949927574_1.png@60w">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="product-link">
+                                                <a style="display: inline-block;max-height: 50px;overflow: hidden;" data-bind="{text: p.ref('subject') , attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value,title:p.ref('subject')}}" href="#/pages/product_manager/productviewinfo?id=71744" title="HP笔记本电脑22100">HP笔记本电脑22100</a><br>
+                                                价格：<small class="price" data-bind="text:p.ref('taxPrice')">4500</small>
+                                            </div>
+                                        </td>
+                                        <td ><span >电脑</span></td>
+                                        <td ><span >2016-11-30 00:00:00</span></td>
+                                        <td >
+                                            <span>新品/未上架</span>
+                                        </td>
+                                        <td> <a href="javascript:void(0)">查看详情</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="u-checkbox only-style" >
+                                                <input type="checkbox" class="u-checkbox-input">
+                                                <span class="u-checkbox-label"></span>
+                                            </label>
+                                        </td>
+                                        <td >
+                                            <div class="">
+                                                <a data-bind="{attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value}}" href="#/pages/product_manager/productviewinfo?id=71744"> <img alt="未上传图片" data-bind="{attr:{src : p.ref('imgUrl')()+'@60w'}}" src="http://oss-yc-dev.img-cn-beijing.aliyuncs.com/publictenant/c8f9bece-2c44-4120-989c-e12949927574_1.png@60w">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="product-link">
+                                                <a style="display: inline-block;max-height: 50px;overflow: hidden;" data-bind="{text: p.ref('subject') , attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value,title:p.ref('subject')}}" href="#/pages/product_manager/productviewinfo?id=71744" title="HP笔记本电脑22100">HP笔记本电脑22100</a><br>
+                                                价格：<small class="price" data-bind="text:p.ref('taxPrice')">4500</small>
+                                            </div>
+                                        </td>
+                                        <td ><span >电脑</span></td>
+                                        <td ><span >2016-11-30 00:00:00</span></td>
+                                        <td >
+                                            <span>新品/未上架</span>
+                                        </td>
+                                        <td> <a href="javascript:void(0)">查看详情</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="u-checkbox only-style" >
+                                                <input type="checkbox" class="u-checkbox-input">
+                                                <span class="u-checkbox-label"></span>
+                                            </label>
+                                        </td>
+                                        <td >
+                                            <div class="">
+                                                <a data-bind="{attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value}}" href="#/pages/product_manager/productviewinfo?id=71744"> <img alt="未上传图片" data-bind="{attr:{src : p.ref('imgUrl')()+'@60w'}}" src="http://oss-yc-dev.img-cn-beijing.aliyuncs.com/publictenant/c8f9bece-2c44-4120-989c-e12949927574_1.png@60w">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="product-link">
+                                                <a style="display: inline-block;max-height: 50px;overflow: hidden;" data-bind="{text: p.ref('subject') , attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value,title:p.ref('subject')}}" href="#/pages/product_manager/productviewinfo?id=71744" title="HP笔记本电脑22100">HP笔记本电脑22100</a><br>
+                                                价格：<small class="price" data-bind="text:p.ref('taxPrice')">4500</small>
+                                            </div>
+                                        </td>
+                                        <td ><span >电脑</span></td>
+                                        <td ><span >2016-11-30 00:00:00</span></td>
+                                        <td >
+                                            <span>新品/未上架</span>
+                                        </td>
+                                        <td> <a href="javascript:void(0)">查看详情</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="u-checkbox only-style" >
+                                                <input type="checkbox" class="u-checkbox-input">
+                                                <span class="u-checkbox-label"></span>
+                                            </label>
+                                        </td>
+                                        <td >
+                                            <div class="">
+                                                <a data-bind="{attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value}}" href="#/pages/product_manager/productviewinfo?id=71744"> <img alt="未上传图片" data-bind="{attr:{src : p.ref('imgUrl')()+'@60w'}}" src="http://oss-yc-dev.img-cn-beijing.aliyuncs.com/publictenant/c8f9bece-2c44-4120-989c-e12949927574_1.png@60w">
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="product-link">
+                                                <a style="display: inline-block;max-height: 50px;overflow: hidden;" data-bind="{text: p.ref('subject') , attr:{href : '#/pages/product_manager/productviewinfo?id='+ p.data.id.value,title:p.ref('subject')}}" href="#/pages/product_manager/productviewinfo?id=71744" title="HP笔记本电脑22100">HP笔记本电脑22100</a><br>
+                                                价格：<small class="price" data-bind="text:p.ref('taxPrice')">4500</small>
+                                            </div>
+                                        </td>
+                                        <td ><span >电脑</span></td>
+                                        <td ><span >2016-11-30 00:00:00</span></td>
+                                        <td >
+                                            <span>新品/未上架</span>
+                                        </td>
+                                        <td> <a href="javascript:void(0)">查看详情</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <script src="//design.yyuap.com/static/jquery/jquery-1.11.2.js"></script>
+    <script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
+</body>
+
+</html>
