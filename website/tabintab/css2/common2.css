@@ -1271,15 +1271,3 @@ li.u-menu-item:hover {
         /*overflow: visible!important;*/
     }
 }
-/*正文内容两个页签*/
-#task .u-form-control {
-    height: 60px;
-    border-radius: 0px;
-    padding-top:20px;
-}
-.uf-anglearrowpointingtoright{
-    font-size:5px;
-}
-#task .u-tabs__tab-bar{
-    border-bottom: none;
-}
