@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <!--360 使用Google Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>首页HRBP</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/3.0.6/css/tree.css">
+    <link rel="stylesheet" type="text/css" href="http://design.yyuap.com/static/uui/latest/css/u.css">
+    <link type="text/css" rel="stylesheet" href="font/iconfont.css">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body class="dashboard site-navbar-small site-menubar-fd">
+    <!-- menubar -->
+    <nav class="navbar cloud navbar-fixed-top navbar-default navbar-portal">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button aria-expanded="true" data-target=".side-page" data-toggle="collapse" class="navbar-toggle side-page navbar-toggle-button collapse in" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <div  class="collapse navbar-collapse navbar-left">
+                <ul class="nav navbar-nav ">
+
+                    <li class=""><a href="#"> <img src="http://design.yyuap.com/static/img/designer/logo2x.png" width="110px"></a></li>
+
+                </ul>
+            </div>
+            <div  class="collapse navbar-collapse navbar-right">
+              <ul class="nav navbar-nav ">
+                   <li class="self_li_style"><a urltype="url"><i class="uf uf-magnifyingglass "></i></a></li>
+                   <li class="self_li_style"><a urltype="url"><i class="uf uf-questionsign "></i></a></li>
+                   <li class="self_li_style"><a urltype="url"><i class="uf uf-bellmusicaltool "></i></a></li>
+                    <li class="dropdown tips hide" role="presentation">
+                        <a class="dropdown-toggle udefine" data-toggle="dropdown" href="javascript:void (0);" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon iconfont"></i>
+                            <span class="badge label-danger udefine">11</span>
+                        </a>
+                        <div class="dropdown-menu" style="min-width: 200px;padding: 0;border:none">
+                            <ul class="  list-group" style="margin-bottom: 0">
+                                <li class="list-group-item"><span class="badge label-danger">4</span> <span class="label label-warning">消息:</span> Cras justo odio
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-info">待办:</span> Dapibus ac facilisis in
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-info">审批:</span> Morbi leo risus
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-warning">消息:</span> Porta ac consectetur ac
+                                </li>
+                                <li class="list-group-item"><span class="badge label-danger">4</span> <span class="label label-warning">消息:</span> Vestibulum at eros
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a role="button" id="username" aria-expanded="false" href="javascript:void (0);" data-toggle="dropdown" class="navbar-avatar dropdown-toggle">
+                            <span class="avatar avatar-online"> <img src="./img/user.png"></span>
+                            <span class="avatar-name">gary</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li role="presentation">
+                                <a role="menuitem">
+                                    <i aria-hidden="true" class="icon wb-user"></i> 管理中心
+                                </a>
+                            </li>
+                            <li role="presentation" class="hide">
+                            </li>
+                            <li style="display: none;">
+                                <a href="javascript:;" id="design">
+                                    <i class="portalfont icon-personalized"></i>个性化
+                                </a>
+                            </li>
+                            <li class="wbsettings" role="presentation">
+                                <a role="menuitem"> <i aria-hidden="true" class="icon wb-settings"></i> 个人设置
+                                </a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem"><i aria-hidden="true" class="icon wb-power"></i> 退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- menubar end-->
+    <!-- sidebar -->
+    <div class="site-menubar sidebar-left side-page collapse" aria-expanded="false" style="height: 10px;">
+        <div class="site-menubar-inner">
+             <ul class="menubar">
+                <li class="active" isindex="true"><a urltype="view" ahref="##sysmgr"><i class="uf uf-home"></i><span class="icon-name">首页</span></a></li>
+                <li><a urltype="url"><i class="uf uf-sitemap"></i><span class="icon-name">组织管理</span></a></li>
+                <li><a urltype="url"><i class="uf uf-groupprofileusers"></i><span class="icon-name">员工管理</span></a></li>
+                <li><a urltype="url"><i class="uf uf-time"></i><span class="icon-name">时间管理</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar  end-->
+    <!-- Page -->
+   <div class="page">
+            <div class="container-fluid md-skin ">
+                <div class="h4">
+                    我的应用
+                    <a urltype="url"><i class="uf uf-pencil"></i></a>
+                </div>
+                <div class="u-row">
+                    <div class="u-col-12">
+                        <div class="u-row">
+                            <div class="u-col-3">
+                                <div class="u-widget u-widget-left">
+                                    <div style="height:200px;line-height:200px;text-align: center;">
+                                        <div class="u-counter u-counter-lg  fontCard_styly">
+                                            <span class="u-counter-icon green-600">
+                                               <i class="uf uf-usershape"></i>
+                                            </span>
+                                            <span class="u-counter-number">员工入职</span>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-col-3">
+                                <div class=" u-widget u-widget-left">
+                                    <div style="height:200px;line-height:200px;text-align: center;">
+                                        <div class="u-counter u-counter-lg  fontCard_styly">
+                                            <span class="u-counter-icon green-600">
+                                               <i class="uf uf-usershape"></i>
+                                            </span>
+                                            <span class="u-counter-number">员工入职</span>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-col-3">
+                                <div class=" u-widget u-widget-left">
+                                    <div style="height:200px;line-height:200px;text-align: center;">
+                                        <div class="u-counter u-counter-lg  fontCard_styly">
+                                            <span class="u-counter-icon green-600">
+                                               <i class="uf uf-usershape"></i>
+                                            </span>
+                                            <span class="u-counter-number">员工入职</span>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-col-3">
+                                <div class=" u-widget u-widget-left">
+                                    <!-- 模拟内容 -->
+                                    <div style="height:200px;line-height:200px;text-align: center;">
+                                        <div class="u-counter u-counter-lg  fontCard_styly">
+                                            <span class="u-counter-icon green-600">
+                                               <i class="uf uf-usershape"></i>
+                                            </span>
+                                            <span class="u-counter-number">员工休假查询</span>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-col-md-6">
+               <div class="u-widget  u-widget-left">
+
+                   <div class="u-widget-heading">
+                       <h3 class="u-widget-title">待办事项<a class="u-link u-widget-more">更多</a></h3>
+                   </div>
+                   <div class="u-widget-body">
+                       <div class="u-tabs">
+                           <div class="u-tabs__tab-bar">
+                               <a href="#tab-panel-1-1" class="u-tabs__tab is-active">待办</a>
+                               <a href="#tab-panel-1-2" class="u-tabs__tab">已办</a>
+                           </div>
+                           <div class="u-tabs__panel is-active" id="tab-panel-1-1">
+                               <table class="u-table-base u-table-hover">
+                                   <thead>
+                                   <tr>
+                                       <th>#</th>
+                                       <th>名</th>
+                                       <th>姓氏</th>
+                                       <th>用户名</th>
+                                       <th>角色</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>Teagan</td>
+                                       <td>Prohaska</td>
+                                       <td>@Elijah</td>
+                                       <td>
+                                           admin
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>2</td>
+                                       <td>Andy</td>
+                                       <td>Gaylord</td>
+                                       <td>@Ramiro</td>
+                                       <td>
+                                           member
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>3</td>
+                                       <td>Veronica</td>
+                                       <td>Gusikowski</td>
+                                       <td>@Maxime</td>
+                                       <td>
+                                           developer
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>4</td>
+                                       <td>Bruce</td>
+                                       <td>Rogahn</td>
+                                       <td>@Maggio</td>
+                                       <td>
+                                           supporter
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>5</td>
+                                       <td>Carolina</td>
+                                       <td>Hickle</td>
+                                       <td>@Hammes</td>
+                                       <td>
+                                           member
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>6</td>
+                                       <td>Madaline</td>
+                                       <td>Eichmann</td>
+                                       <td>@Amaya</td>
+                                       <td>
+                                           supporter
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                           <div class="u-tabs__panel" id="tab-panel-1-2">
+                               <table class="u-table-base u-table-hover">
+                                   <thead>
+                                   <tr>
+                                       <th>#</th>
+                                       <th>名</th>
+                                       <th>姓氏</th>
+                                       <th>用户名</th>
+                                       <th>角色</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>Teagan</td>
+                                       <td>Prohaska</td>
+                                       <td>@Elijah</td>
+                                       <td>
+                                           admin
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>2</td>
+                                       <td>Andy</td>
+                                       <td>Gaylord</td>
+                                       <td>@Ramiro</td>
+                                       <td>
+                                           member
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>3</td>
+                                       <td>Veronica</td>
+                                       <td>Gusikowski</td>
+                                       <td>@Maxime</td>
+                                       <td>
+                                           developer
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>4</td>
+                                       <td>Bruce</td>
+                                       <td>Rogahn</td>
+                                       <td>@Maggio</td>
+                                       <td>
+                                           supporter
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>5</td>
+                                       <td>Carolina</td>
+                                       <td>Hickle</td>
+                                       <td>@Hammes</td>
+                                       <td>
+                                           member
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>6</td>
+                                       <td>Madaline</td>
+                                       <td>Eichmann</td>
+                                       <td>@Amaya</td>
+                                       <td>
+                                           supporter
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+            <div class="u-col-md-6">
+               <div class="u-widget  u-widget-left">
+
+                   <div class="u-widget-heading">
+                       <h3 class="u-widget-title">员工动态<a class="u-link u-widget-more">更多</a></h3>
+                   </div>
+                   <div class="u-widget-body">
+                       <div class="u-tabs">
+                           <div class="u-tabs__tab-bar">
+                               <a href="#tab-panel-2-1" class="u-tabs__tab is-active">员工转正</a>
+                               <a href="#tab-panel-2-2" class="u-tabs__tab">合同到期</a>
+                               <a href="#tab-panel-2-3" class="u-tabs__tab">员工生日</a>
+                               <a href="#tab-panel-2-4" class="u-tabs__tab">入职周年</a>
+                           </div>
+                           <div class="u-tabs__panel is-active" id="tab-panel-2-1">
+                               <table class="u-table-base u-table-hover">
+                                   <thead>
+                                   <tr>
+                                       <th>#</th>
+                                       <th>姓名</th>
+                                       <th>公司</th>
+                                       <th>时间</th>
+                                       <th>更多</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>2</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>3</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>4</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>5</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>6</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                           <div class="u-tabs__panel" id="tab-panel-2-2">
+                               <table class="u-table-base u-table-hover">
+                                   <thead>
+                                   <tr>
+                                       <th>#</th>
+                                       <th>姓名</th>
+                                       <th>公司</th>
+                                       <th>时间</th>
+                                       <th>更多</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>aa</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>2</td>
+                                       <td>bb</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>3</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>4</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>5</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>6</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                           <div class="u-tabs__panel" id="tab-panel-2-3">
+                               <table class="u-table-base u-table-hover">
+                                   <thead>
+                                   <tr>
+                                       <th>#</th>
+                                       <th>姓名</th>
+                                       <th>公司</th>
+                                       <th>时间</th>
+                                       <th>更多</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>cc</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>2</td>
+                                       <td>dd</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>3</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>4</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>5</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>6</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                           <div class="u-tabs__panel" id="tab-panel-2-4">
+                               <table class="u-table-base u-table-hover">
+                                   <thead>
+                                   <tr>
+                                       <th>#</th>
+                                       <th>姓名</th>
+                                       <th>公司</th>
+                                       <th>时间</th>
+                                       <th>更多</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>vv</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>2</td>
+                                       <td>ada</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>3</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>4</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>5</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>6</td>
+                                       <td>Teagan</td>
+                                       <td>用友网络股份有限公司</td>
+                                       <td>2013-10-10</td>
+                                       <td>
+                                           <a> <i class="uf uf-anglearrowpointingtoright"> </i> </a>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+            <div class="u-col-md-6">
+               <div class="u-widget  u-widget-left">
+
+                   <div class="u-widget-heading">
+                       <h3 class="u-widget-title">人才结构</h3>
+                   </div>
+                   <div class="u-widget-body">
+                       <div class="u-tabs">
+
+                               <div class="u-col-8">
+                                   <div class='u-yearmonth self-div-inlint'>
+                                       <label >
+                                           <input class="padding-left-10 self-div-inlint" type="text">
+                                       </label>
+
+                                   </div>
+                                   <i class="uf uf-calendarwithspringbinderanddateblocks"> </i>
+                                </div>
+
+                                    <div class="u-row self-margin">
+
+                                           <div class="u-col-2">
+                                               <i class="uf uf-squareshapeshadow self-person-construc-age"></i> <span class="age">年龄</span>
+                                           </div>
+                                           <div class="u-col-2">
+                                               <i class="uf uf-squareshapeshadow self-person-construc-learn"></i> <span class="age">学历</span>
+                                           </div>
+
+                                    </div>
+
+                                <!--<p>empty</p>-->
+
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+            <div class="u-col-md-6">
+               <div class="u-widget  u-widget-left">
+
+                   <div class="u-widget-heading">
+                       <h3 class="u-widget-title">人才流动</h3>
+                   </div>
+                   <div class="u-widget-body">
+                       <div class="u-tabs">
+
+                           <div class="u-col-8">
+                               <div class="u-combo self-div-inlint" id="combo1">
+                                   <div class="u-input-group u-has-feedback">
+                                       <input class="u-form-control self-div-inlint" />
+                                       <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+                                   </div>
+                               </div>
+                           </div>
+
+                           <div class="u-row self-margin">
+
+                               <div class="u-col-2">
+                                   <i class="uf uf-squareshapeshadow self-person-construc-gowork"></i> <span class="gowork">离职</span>
+                               </div>
+                               <div class="u-col-2">
+                                   <i class="uf uf-squareshapeshadow self-person-construc-leavework"></i> <span class="leavework">入职</span>
+                               </div>
+
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+            </div>
+    </div>
+    <!-- End Page -->
+    <script src="//design.yyuap.com/static/jquery/jquery-1.11.2.js"></script>
+    <script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
+    <script type="text/javascript" src='js/clodeHr.js'></script>
+    <script type="text/javascript">
+    u.on(window, 'load', function() {
+        var bar = new sidebar('.menubar');
+
+    });
+    </script>
+</body>
+
+</html>

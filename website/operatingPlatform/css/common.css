@@ -1,0 +1,257 @@
+.site-menubar {
+    position: fixed;
+    background: #333 none repeat scroll 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    color: rgba(163, 175, 183, 0.9);
+    height: calc(100% - 60px);
+    top: 50px;
+    -ms-transition: transform 0.3s ease 0s;
+    -webkit-transition: -webkit-transform 0.3s ease 0s;
+    width: 74px;
+    z-index: 1000;
+    padding-top: 10px;
+    height: 100% !important;
+}
+.site-menubar li, .site-menubar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-menubar ul {
+    -ms-transition: transform 0.5s ease 0s, background 0.25s ease 0s;
+    -webkit-transition: -webkit-transform 0.5s ease 0s, background 0.25s ease 0s;
+    -moz-transition: transform 0.5s ease 0s, background 0.25s ease 0s;
+}
+
+.site-menubar li a {
+    outline: 0;
+}
+.site-menubar-light .site-menu-item > .site-menu-sub {
+    background-color: rgba(53, 131, 202, .05)
+}
+.navbar-nav .iconfont {
+    font-size: 22px;
+    color: #858786;
+}
+.navbar-portal {
+    margin-bottom: 0;
+}
+.navbar-portal .navbar-toggle {
+    border-radius: 0;
+    margin: 0;
+    padding: 18px 26px;
+    height: 100% !important;
+    display: block;
+}
+.navbar-portal .container-fluid {
+    padding: 0;
+}
+
+.navbar-portal .navbar-nav li a {
+    padding-bottom: 11px;
+    padding-top: 13px;
+}
+
+.navbar-portal .navbar-toggle .icon-bar {
+    background-color: #d85342;
+}
+.navbar-toggle-button {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-toggle-button.collapse.in {
+    background: #d85342;
+}
+
+.navbar-toggle-button.collapse.in .icon-bar {
+    background: #fff;
+}
+.icon-name {
+    display: inline-block;
+    color: #bfbfbf;
+    text-underline: none;
+    font-size: 13px;
+    position: relative;
+    width: 52px;
+    font-weight: 100;
+    line-height: 15px;
+    margin-top: 5px;
+}
+.menubar li i {
+    font-size: 24px;
+    color: #bfbfbf;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+}
+
+.menubar li {
+    position: relative;
+    text-align: center;
+}
+
+.site-menubar.sidebar-left.collapse {
+    height: 100% !important;
+    overflow: visible !important;
+    padding-bottom: 0;
+    display: block;
+}
+.site-menubar.sidebar-left.collapse.in {
+    transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    display: none;
+}
+/*transforms  for  ie8 */
+.csstransforms .site-menubar.sidebar-left.collapse {
+    display: block !important;
+}
+.csstransforms .site-menubar.sidebar-left.collapse.in {
+    display: none;
+}
+.csstransforms .site-menubar.sidebar-left.collapse.in .menubar-footer {
+    transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+}
+.page, body{
+  background: #f5f5f5;
+}
+.page {
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 74px;
+    -webkit-transition: width 0.3s ease 0s;
+    transition: width 0.3s ease 0s;
+    position: relative;
+    height: 100% !important;
+}
+.page.collapse.in {
+    margin-left: 0;
+}
+.page.collapse {
+    display: block;
+    height: 100%;
+}
+.navbar-toggle {
+    height: 50px;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    float: left;
+    color: #d55345;
+    display: block;
+}
+
+.menubar > li > a {
+    display: block;
+    padding: 7px 0;
+}
+
+.menubar > li.active > a {
+    margin-left: -2px;
+}
+
+.menubar > li.active {
+    background: #4f4f4f;
+    border-left: 2px solid #d85142;
+}
+
+.menubar li.active i,
+.menubar li.active .icon-name,
+.menubar li.active .wb-chevron-right-mini {
+    color: #fff;
+}
+
+.menubar-hover {
+    background: #4f4f4f;
+}
+
+.menubar li.menubar-hover i,
+.menubar-hover .icon-name,
+.menubar li.menubar-hover .wb-chevron-right-mini {
+    color: #fff;
+}
+.navbar-toggle {
+    height: 50px;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    float: left;
+    color: #d55345;
+    display: block;
+}
+.navbar-avatar .avatar {
+    display: inline;
+}
+#username {
+    padding: 7px;
+}
+#username span img {
+    width: 36px;
+}
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    position: relative!important
+}
+@media (min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 240px;
+        min-height: 1000px
+    }
+}
+
+.label {
+    font-weight: normal;
+}
+
+.u-tabs__tab-bar {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.u-tabs__panel {
+    padding-top: 10px;
+}
+
+.self_li_style{
+    height: 50px;
+    border-right: 1px solid #efeaea;
+}
+.fontCard_styly{
+    text-align: center;
+}
+.self_margin{
+    margin:15px  0;
+}
+.a-right-style{
+    float: right;
+
+}
+.self_inline_block{
+    display: inline-block;
+}
+.self-person-construc-age{
+    color:#2196F3;
+}
+.self-person-construc-learn{
+    color:#1DE9B6;
+}
+.self-div-inlint{
+    width: 100px;
+    display: inline-block;
+}
+.self-margin{
+    margin-left: 0px;
+}
+.self-person-construc-gowork{
+    color:#F44336;
+}
+.self-person-construc-leavework{
+    color:#2196F3;
+}
