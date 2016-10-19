@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/3.0.6/css/tree.css">
     <link rel="stylesheet" type="text/css" href="http://design.yyuap.com/static/uui/latest/css/u.css">
-    <link type="text/css" rel="stylesheet" href="font/iconfont.css">
     <link href="css/common.css" rel="stylesheet">
 </head>
 
@@ -171,7 +170,7 @@
                                             <span class="u-counter-icon green-600">
                                                <i class="uf uf-usershape"></i>
                                             </span>
-                                            <span class="u-counter-number">员工休假查询</span>
+                                            <span class="u-counter-number">员工休假</span>
 
 
                                         </div>
@@ -640,7 +639,7 @@
                    </div>
                    <div class="u-widget-body">
                        <div class="u-tabs">
-
+                            <div class="u-row">
                                <div class="u-col-8">
                                    <div class='u-yearmonth self-div-inlint'>
                                        <label >
@@ -650,20 +649,13 @@
                                    </div>
                                    <i class="uf uf-calendarwithspringbinderanddateblocks"> </i>
                                 </div>
-
-                                    <div class="u-row self-margin">
-
-                                           <div class="u-col-2">
-                                               <i class="uf uf-squareshapeshadow self-person-construc-age"></i> <span class="age">年龄</span>
-                                           </div>
-                                           <div class="u-col-2">
-                                               <i class="uf uf-squareshapeshadow self-person-construc-learn"></i> <span class="age">学历</span>
-                                           </div>
-
-                                    </div>
-
-                                <!--<p>empty</p>-->
-
+                                   <div class="u-col-2">
+                                       <i class="uf uf-squareshapeshadow self-person-construc-age"></i> <span class="age">年龄</span>
+                                   </div>
+                                   <div class="u-col-2">
+                                       <i class="uf uf-squareshapeshadow self-person-construc-learn"></i> <span class="age">学历</span>
+                                   </div>
+                            </div>
                        </div>
                    </div>
 
@@ -678,7 +670,7 @@
                    <div class="u-widget-body">
                        <div class="u-tabs">
 
-                           <div class="u-col-8">
+                         <!--  <div class="u-col-8">
                                <div class="u-combo self-div-inlint" id="combo1">
                                    <div class="u-input-group u-has-feedback">
                                        <input class="u-form-control self-div-inlint" />
@@ -698,6 +690,23 @@
 
                            </div>
 
+-->
+                           <div class="u-row">
+                               <div class="u-col-8">
+                                   <div class="u-combo self-div-inlint" id="combo1">
+                                       <div class="u-input-group u-has-feedback">
+                                           <input class="u-form-control self-div-inlint" />
+                                           <span class="u-form-control-feedback uf uf-anglearrowdown" data-role="combo-button"></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="u-col-2">
+                                   <i class="uf uf-squareshapeshadow self-person-construc-gowork"></i> <span class="gowork">离职</span>
+                               </div>
+                               <div class="u-col-2">
+                                   <i class="uf uf-squareshapeshadow self-person-construc-leavework"></i> <span class="leavework">入职</span>
+                               </div>
+                           </div>
                        </div>
                    </div>
                </div>
@@ -707,12 +716,7 @@
     <script src="//design.yyuap.com/static/jquery/jquery-1.11.2.js"></script>
     <script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
     <script type="text/javascript" src='js/clodeHr.js'></script>
-    <script type="text/javascript">
-    u.on(window, 'load', function() {
-        var bar = new sidebar('.menubar');
 
-    });
-    </script>
 </body>
 
 </html>
