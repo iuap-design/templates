@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)http://123.103.9.199/workbench/#/ifr/%252Fyuncai%252Fworkbench%2523%252Fpages%252Frequirement%252Frequirelist%252F0 -->
+<html style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <!--360 使用Google Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>部门管理表单</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/3.0.6/css/tree.css">
+    <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/3.0.6/css/u.css">
+    <link type="text/css" rel="stylesheet" href="font/iconfont.css">
+    <link href="css/common.css" rel="stylesheet">
+</head>
+
+<body class="dashboard site-navbar-small site-menubar-fd">
+<!-- menubar -->
+<nav class="navbar cloud navbar-fixed-top navbar-default navbar-portal">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button aria-expanded="true" data-target=".side-page" data-toggle="collapse" class="navbar-toggle side-page navbar-toggle-button collapse in" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div  class="collapse navbar-collapse navbar-left">
+            <ul class="nav navbar-nav ">
+                <li class=""><a href="#"> <img src="http://design.yyuap.com/static/img/designer/logo2x.png" width="110px"></a></li>
+            </ul>
+        </div>
+        <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="yc-dropdown">
+                    <a urltype="url"><i class="uf uf-envelope "></i></a>
+                </li>
+                <li class="im-dropdown ">
+                    <a urltype="url"><i class="uf uf-bellmusicaltool "></i></a>
+                </li>
+                <li class="iputoptitle"><a>云采门户</a></li>
+                <li class="iputoptitle"><a>云采超市</a></li>
+                <li class="dropdown tips hide" role="presentation">
+                    <a class="dropdown-toggle udefine" data-toggle="dropdown" href="javascript:void (0);" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon iconfont"></i>
+                        <span class="badge label-danger udefine">11</span>
+                    </a>
+                    <div class="dropdown-menu" style="min-width: 200px;padding: 0;border:none">
+                        <ul class="  list-group" style="margin-bottom: 0">
+                            <li class="list-group-item"><span class="badge label-danger">4</span> <span class="label label-warning">消息:</span> Cras justo odio
+                            </li>
+                            <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-info">待办:</span> Dapibus ac facilisis in
+                            </li>
+                            <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-info">审批:</span> Morbi leo risus
+                            </li>
+                            <li class="list-group-item"><span class="badge label-danger">1</span> <span class="label label-warning">消息:</span> Porta ac consectetur ac
+                            </li>
+                            <li class="list-group-item"><span class="badge label-danger">4</span> <span class="label label-warning">消息:</span> Vestibulum at eros
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a role="button" id="username" aria-expanded="false" href="javascript:void (0);" data-toggle="dropdown" class="navbar-avatar dropdown-toggle">
+                        <span class="avatar avatar-online"> <img src="./img/user.png"></span>
+                        <span class="avatar-name">Gary</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li role="presentation">
+                            <a role="menuitem">
+                                <i aria-hidden="true" class="icon wb-user"></i> 管理中心
+                            </a>
+                        </li>
+                        <li role="presentation" class="hide">
+                        </li>
+                        <li style="display: none;">
+                            <a href="javascript:;" id="design">
+                                <i class="portalfont icon-personalized"></i>个性化
+                            </a>
+                        </li>
+                        <li class="wbsettings" role="presentation">
+                            <a role="menuitem"> <i aria-hidden="true" class="icon wb-settings"></i> 个人设置
+                            </a>
+                        </li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem"><i aria-hidden="true" class="icon wb-power"></i> 退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- menubar end-->
+<!-- sidebar -->
+<div class="site-menubar sidebar-left side-page collapse" aria-expanded="false" style="height: 10px;">
+    <div class="site-menubar-inner">
+        <ul class="menubar">
+            <li class="active" isindex="true"><a urltype="view" ahref="##sysmgr"><i class="uf uf-inbox"></i><span class="icon-name">首页</span></a></li>
+            <li class=""><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">供货管理<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu " style="display: none;">
+                    <ul>
+                        <li><a urltype="url">允销确认</a></li>
+                        <li><a urltype="url">供货目录</a></li>
+                        <li><a urltype="url">超市商品上架</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="">
+                <a urltype="view"></i><span class="icon-name">应用中心</span></a>
+            </li>
+            <li><a urltype="url" ahref="#/yuncai/workbench#/pages/requirement/requirelist/0" href="./云门户_files/云门户.html"><i class="uf uf-inbox"></i><span class="icon-name">采购需求</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购需求</span></a></li>
+            <li><a urltype="url" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">询比价<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a urltype="url">询价管理</a></li>
+                        <li><a urltype="url">定标</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a urltype="url" ahref="#/yuncai/workbench#/pages/order/purorder"><i class="uf uf-inbox"></i><span class="icon-name">采购订单</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购对账</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购发票</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">报价</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">发货管理</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">到货查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">入库查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">销售交易查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">销售订单查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购发票查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">供应商管理</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">企业用户管理</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">组织部门人员</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">企业信息管理</span></a></li>
+            <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">基础信息维护<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a urltype="url">超市目录</a></li>
+                        <li><a urltype="url">物料分类</a></li>
+                        <li><a urltype="url">物料管理</a></li>
+                        <li><a urltype="url">商品管理</a></li>
+                        <li><a urltype="url">商品分类</a></li>
+                        <li><a>供应商分类管理</a></li>
+                        <li><a>ERP数据维护</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">1688配置<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a>1688消息处理</a></li>
+                        <li><a>1688授权登录</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">审批流设置<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a>审批流用户同步</a></li>
+                        <li><a>审批流设计</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a><i class="uf uf-inbox"></i><span class="icon-name">我的网关</span></a></li>
+            <li><a><i class="uf uf-inbox"></i><span class="icon-name">网关安全中心</span></a></li>
+        </ul>
+        <div class="menubar-footer" style="display: block;"><a href="javascript:;" class="arrow-up lock"><i class=" uf uf-uparrow"></i></a><a href="javascript:;" class="arrow-down"><i class="uf uf-anglearrowdown"></i></a></div>
+    </div>
+</div>
+<!-- sidebar  end-->
+<!-- Page -->
+<div class="page side-page collapse" aria-expanded="false" style="height: 40px;">
+    <div class="container-fluid md-skin">
+        <div id="wrapper">
+            <!--主内容区域-->
+            <div id="r" class="gray-bg">
+                <div id="" class="">
+                    <div class="listContent" id="buyofferList">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <div class="u-row">
+                                    <div class="u-col-md-12 ibox-m-title">
+                                        <ol class="u-breadcrumb padding-top-15">
+                                            <li><a class="u-link" href="javascript:void(0)">首页</a></li>
+                                            <li class="active">部门管理</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ibox-filter">
+                                <div class="ibox-filter-title pull-left">
+                                    <span>组织部门管理</span>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="u-row">
+                                    <div class="u-col-3 ">
+                                        <div class="u-widget  u-widget-right">
+                                            <div class="u-widget-body">
+                                                <div class="demo">
+                                                    <div id="PlusIcon">
+                                                        <div id="treeTest3" class="ztree" u-meta='{"id":"tree3","data":"dataTable","type":"tree","idField":"id","pidField":"pid","nameField":"title","setting":"treeSetting"}'></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="u-col-9">
+                                        <div class="u-row">
+                                            <div class="u-col-2 padding-right-0">
+                                                <div class="margin-bottom-10 ">
+                                                    <button class="u-button u-button-primary u-button-xg  dept-edit-a margin-left-15 font-size-18">部门编辑</button>
+                                                </div>
+                                            </div>
+                                            <div class="u-col-10 title_border">
+                                                <div class="margin-bottom-10 u-col-3  u-col-md-offset-7">
+                                                    <button class="u-button u-button-info "> <i class="uf uf-textfile1"></i> 新增下级</button>
+                                                </div>
+                                                <div class="margin-bottom-10 u-col-2 ">
+                                                    <button class="u-button u-button-danger "> <i class="uf  uf-trash"></i>删除</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div >
+                                            <form>
+                                                <div class="u-row">
+                                                    <div class="u-col-12 margin-top-20">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-form-label form-style-lineHeight text-right u-col-xs-5 padding-0">上级分类:</label>
+                                                            <div class="u-col-9 u-col-xs-7">
+                                                                <input type="text" class="u-form-control" placeholder="请输入上级分类">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12 ">
+                                                        <div class="u-form-group ">
+                                                            <label class="u-col-3 u-form-label form-style-lineHeight text-right u-col-xs-5 padding-0">组织部门编码:</label>
+                                                            <div class="u-col-9 u-col-xs-7">
+                                                                <input type="text" class="u-form-control" placeholder="请输入组织部门编码">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-form-label form-style-lineHeight text-right u-col-xs-5 padding-0">组织部门名称:</label>
+                                                            <div class="u-col-9 u-col-xs-7">
+                                                                <input type="text" class="u-form-control" placeholder="请输入组织部门名称">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-form-label text-right u-col-xs-5 padding-0">类型:</label>
+                                                            <div class="u-col-9 u-col-xs-7 ">
+                                                                <label  class="u-radio u-col-3" for="option-1">
+                                                                    <input type="radio" id="option-1" class="u-radio-button" name="options">
+                                                                    <label for="inputBasicChose">组织</label>
+                                                                </label>
+                                                                <label  class="u-radio u-col-3" for="option-2">
+                                                                    <input type="radio" id="option-2" class="u-radio-button" name="options" checked>
+                                                                    <label for="inputBasicChose">部门</label>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12 ">
+                                                        <div class="u-form-group ">
+                                                            <label class="u-col-3 u-form-label text-right u-col-xs-5 padding-0">组织类型:</label>
+                                                            <div class="u-col-9 u-col-xs-7 ">
+                                                                <label class="u-checkbox w-64">
+                                                                    <input type="checkbox" class="u-checkbox-input" checked>
+                                                                    <span class="u-checkbox-label">采购</span>
+                                                                </label>
+                                                                <label class="u-checkbox w-64">
+                                                                    <input type="checkbox" class="u-checkbox-input" checked>
+                                                                    <span class="u-checkbox-label">库存</span>
+                                                                </label>
+                                                                <label class="u-checkbox w-64">
+                                                                    <input type="checkbox" class="u-checkbox-input" checked>
+                                                                    <span class="u-checkbox-label">财务</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-form-label form-style-lineHeight text-right u-col-xs-5 padding-0">开票组织:</label>
+                                                            <div class="u-col-9 u-col-xs-7">
+                                                                <input type="text" class="u-form-control" placeholder="请输入开票组织">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-form-label form-style-lineHeight text-right u-col-xs-5 padding-0 ">采购组织:</label>
+                                                            <div class="u-col-9 u-col-xs-7">
+                                                                <input type="text" class="u-form-control" placeholder="请输入采购组织">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-form-label form-style-lineHeight text-right  u-col-xs-5  padding-0">财务组织:</label>
+                                                            <div class="u-col-9 u-col-xs-7">
+                                                                <input type="text" class="u-form-control" placeholder="请输入财务组织">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-form-label form-style-lineHeight text-right u-col-xs-5 padding-0">ERP部门编码:</label>
+                                                            <div class="u-col-9 u-col-xs-7">
+                                                                <input type="text" class="u-form-control" placeholder="请输入ERP部门编码">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="u-col-12">
+                                                        <div class="u-form-group">
+                                                            <label class="u-col-3 u-col-xs-4">
+
+                                                            </label>
+                                                            <div class="u-col-9 u-col-xs-4">
+                                                                <div class="">
+                                                                    <button class="u-button u-button-info">保存</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="popup-content"></div>
+                <div class="footer" style="display:none;">
+                    <div id="footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toolbar" style="display: none"></div>
+</div>
+<!-- End Page -->
+<script src="http://design.yyuap.com/static/jquery/jquery-1.9.1.min.js"></script>
+<script src="http://design.yyuap.com/static/uui-original/1.0.1/js/u.js"></script>
+<script src="lib/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src='//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js'></script>
+<script type="text/javascript" src='//design.yyuap.com/static/uui/3.0.6/js/u-tree.js'></script>
+<script type="text/javascript" src='js/sidebar.js'></script>
+<script type="text/javascript" src='js/collpase.js'></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script type="text/javascript" src="js/management.js"></script>
+<script type="text/javascript" src="lib/pace.min.js"></script>
+<script type="text/javascript">
+    u.on(window, 'load', function() {
+        var bar = new sidebar('.menubar');
+        Pace.start({
+            document: false
+        });
+    });
+</script>
+</body>
+
+</html>
