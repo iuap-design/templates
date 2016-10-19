@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <!--360 使用Google Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--优先使用 IE 最新版本和 Chrome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>云门户</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="//design.yyuap.com/static/uui/3.0.6/css/u.css">
+    <link type="text/css" rel="stylesheet" href="font/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="http://design.yyuap.com/static/uui/latest/css/grid.css">
+    <link href="css2/common2.css" rel="stylesheet">
+
+</head>
+
+<body class="dashboard site-navbar-small site-menubar-fd">
+
+<!-- menubar -->
+<nav class="u-navbar navbar-fixed-top navbar-default navbar-portal">
+    <div class="u-container-fluid ">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="u-navbar-header" style="float: left;">
+            <button aria-expanded="true" data-target=".side-page" data-toggle="collapse" class="navbar-toggle side-page navbar-toggle-button collapse in" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="iputoptitle"><a class="uf uf-envelope margin-top-5"></a></li>
+                <li class="iputoptitle"><a class="uf uf-musicalbelloutline margin-top-5"></a></li>
+                <li class="iputoptitle"><a class="margin-top-5">云采门户
+                </a></li>
+                <li class="iputoptitle"><a class="margin-top-5">云采超市
+                </a></li>
+                <li class="dropdown ">
+                    <a role="button" id="demo-menu-lower-right6" aria-expanded="false" href="javascript:void (0);" data-toggle="dropdown" class="navbar-avatar dropdown-toggle">
+                        <span class="avatar avatar-online"> <img src="./img/user.png"></span>
+                        <span class="avatar-name">public01</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="u-menu" for="demo-menu-lower-right6">
+                        <!--<li class="u-menu-item "><a class="uf uf-anchorshape">管理中心</a> </li>
+                        <li class="u-menu-item "><a class="uf uf-anchorshape">个性化</a></li>
+                        <li class="divider-line "></li>
+                        <li class="u-menu-item "><a class="uf uf-anchorshape">退出</a></li>-->
+                        <li class="u-menu-item ">管理中心 </li>
+                        <li class="u-menu-item ">个性化</li>
+                        <li class="divider-line "></li>
+                        <li class="u-menu-item ">退出</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<!-- menubar end-->
+<!-- sidebar -->
+<div class="site-menubar sidebar-left side-page collapse" aria-expanded="false" style="height: 10px;">
+    <div class="site-menubar-inner">
+        <ul class="menubar">
+            <li class="active" isindex="true">
+                <a urltype="view" ahref="##sysmgr">
+                    <i class="uf uf-inbox"></i>
+                    <span class="icon-name">首页</span>
+                </a>
+            </li>
+            <li class="">
+                <a urltype="view"></i><span class="icon-name">应用中心</span></a>
+            </li>
+            <li class="">
+                <a urltype="null" href="javascript:void(0);">
+                    <i class="uf uf-inbox"> </i>
+                    <span class="icon-name">寻源管理<span class="icon wb-chevron-right-mini"></span><span class="uf uf-anglearrowpointingtoright"></span></span>
+                </a>
+                <div class="menubar-menu " style="">
+                    <ul>
+                        <li><a urltype="url">询价管理</a></li>
+                        <li><a urltype="url">定标
+                        <li><a urltype="url">采购需求</a></li></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购需求</span></a></li>
+            <li><a urltype="url" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">询比价<span class="icon wb-chevron-right-mini"></span><span class="uf uf-anglearrowpointingtoright"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a urltype="url">询价管理</a></li>
+                        <li><a urltype="url">定标</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a urltype="url" ahref="#/yuncai/workbench#/pages/order/purorder"><i class="uf uf-inbox"></i><span class="icon-name">采购订单</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购对账</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购发票</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">报价</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">发货管理</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">到货查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">入库查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">销售交易查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">销售订单查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">采购发票查询</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">供应商管理</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">企业用户管理</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">组织部门人员</span></a></li>
+            <li><a urltype="url"><i class="uf uf-inbox"></i><span class="icon-name">企业信息管理</span></a></li>
+            <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">基础信息维护<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a urltype="url">超市目录</a></li>
+                        <li><a urltype="url">物料分类</a></li>
+                        <li><a urltype="url">物料管理</a></li>
+                        <li><a urltype="url">商品管理</a></li>
+                        <li><a urltype="url">商品分类</a></li>
+                        <li><a>供应商分类管理</a></li>
+                        <li><a>ERP数据维护</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">1688配置<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a>1688消息处理</a></li>
+                        <li><a>1688授权登录</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a urltype="null" href="javascript:void(0);"><i class="uf uf-inbox"> </i><span class="icon-name">审批流设置<span class="icon wb-chevron-right-mini"></span></span></a>
+                <div class="menubar-menu ">
+                    <ul>
+                        <li><a>审批流用户同步<span class="uf uf-anglearrowpointingtoright"></span></a></li>
+                        <li><a>审批流设计</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a><i class="uf uf-inbox"></i><span class="icon-name">我的网关</span></a></li>
+            <li><a><i class="uf uf-inbox"></i><span class="icon-name">网关安全中心</span></a></li>
+        </ul>
+        <div class="menubar-footer" style="display: block;">
+            <a href="javascript:;" class="arrow-up lock"><i class=" uf uf-uparrow"></i></a>
+            <a href="javascript:;" class="arrow-down"><i class="uf uf-anglearrowdown"></i></a>
+        </div>
+    </div>
+</div>
+<!-- sidebar  end-->
+<!-- Page -->
+<div class="page side-page collapse" aria-expanded="false" style="height: 40px;">
+    <div class="container-fluid md-skin">
+        <div id="wrapper">
+            <!--主内容区域-->
+            <div id="page-wrapper" class="gray-bg">
+                <!--内容区-->
+                <div class="clearfix padding-left-20 margin-bottom-10 padding-top-10" style="background: #fff;height: 45px;">
+                    <div class="pull-left u-col-4" >供货目录
+                    </div>
+                    <div class="search pull-right margin-right-20">
+                        <div class="u-input-group u-has-feedback sw">
+                            <input type="text" class="u-form-control" id="querycond"   placeholder="请输入物料名称">
+                            <span class="u-form-control-feedback uf uf-magnifyingglass"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-container" id="task">
+                    <div class="u-tabs">
+                        <div class="u-tabs__tab-bar" style="background: #fff;">
+                            <a href="#tab-panel-1" class="u-tabs__tab is-active">按供应商查看</a>
+                            <a href="#tab-panel-2" class="u-tabs__tab">按物料查看</a>
+                        </div>
+                        <div class="u-tabs__panel is-active" id="tab-panel-1">
+                            <div class="u-panel padding-20" style="border: 0px solid #cecece;box-shadow: none;">
+                                <div class=" ">
+                                    <div class="u-form-control ">
+                                        <span class=""><a class="uf specdown uf-anglearrowdown"></a><a class="uf specup uf-uparrow hide"></a></span>
+                                        <span class="">史泰博</span>
+                                    </div>
+                                    <div class=" padding-20 hide" style="display: block;border-left: 1px solid #cecece;border-right: 1px solid #cecece;min-height:240px;">
+                                        <div
+                                                u-meta='{"id":"grid","type":"grid","data":"dataTable","columnMenu":true,"canDrag":false,"sortable":false,"canSwap":false}'>
+                                            <div options='{"field":"title","dataType":"String","title":"申请标题"}'></div>
+                                            <div options='{"field":"info","dataType":"String","title":"商品信息"}'></div>
+                                            <div options='{"field":"price","dataType":"String","title":"价格"}'></div>
+                                            <div options='{"field":"validate","dataType":"time","title":"有效期"}'></div>
+                                            <div options='{"field":"update","dataType":"time","title":"更新时间"}'></div>
+                                            <div options='{"field":"human","dataType":"String","title":"更新人"}'></div>
+                                            <div options='{"field":"things","dataType":"String","title":"对应买家物料"}'></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" ">
+                                    <div class="u-form-control ">
+                                        <span class=""><a class="uf specdown uf-anglearrowdown"></a><a class="uf specup uf-uparrow hide"></a></span>
+                                        <span class="">碧桂园</span>
+                                    </div>
+                                    <div class=" padding-20 hide" style="display: block;border-left: 1px solid #cecece;border-right: 1px solid #cecece;min-height:240px;">
+                                        <div
+                                                u-meta='{"id":"grid2","type":"grid","data":"dataTable","columnMenu":true,"canDrag":false,"sortable":false,"canSwap":false}'>
+                                            <div options='{"field":"title","dataType":"String","title":"申请标题"}'></div>
+                                            <div options='{"field":"info","dataType":"String","title":"商品信息"}'></div>
+                                            <div options='{"field":"price","dataType":"String","title":"价格"}'></div>
+                                            <div options='{"field":"validate","dataType":"time","title":"有效期"}'></div>
+                                            <div options='{"field":"update","dataType":"time","title":"更新时间"}'></div>
+                                            <div options='{"field":"human","dataType":"String","title":"更新人"}'></div>
+                                            <div options='{"field":"things","dataType":"String","title":"对应买家物料"}'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ">
+                                    <div class="u-form-control ">
+                                        <span class=""><a class="uf specdown uf-anglearrowdown"></a><a class="uf specup uf-uparrow hide"></a></span>
+                                        <span class="">demo04</span>
+                                    </div>
+                                    <div class=" padding-20 hide" style="display: block;border-left: 1px solid #cecece;border-right: 1px solid #cecece;min-height:240px;">
+                                        <div
+                                                u-meta='{"id":"grid3","type":"grid","data":"dataTable","columnMenu":true,"canDrag":false,"sortable":false,"canSwap":false}'>
+                                            <div options='{"field":"title","dataType":"String","title":"申请标题"}'></div>
+                                            <div options='{"field":"info","dataType":"String","title":"商品信息"}'></div>
+                                            <div options='{"field":"price","dataType":"String","title":"价格"}'></div>
+                                            <div options='{"field":"validate","dataType":"time","title":"有效期"}'></div>
+                                            <div options='{"field":"update","dataType":"time","title":"更新时间"}'></div>
+                                            <div options='{"field":"human","dataType":"String","title":"更新人"}'></div>
+                                            <div options='{"field":"things","dataType":"String","title":"对应买家物料"}'></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="u-tabs__panel" id="tab-panel-2">
+                            <div class="u-panel padding-20" style="border: 0px solid #cecece;box-shadow: none;">
+                                <div class="">
+                                    <div class="u-form-control ">
+                                        <span class=""><a class="uf specdown uf-anglearrowdown"></a><a class="uf specup uf-uparrow hide"></a></span>
+                                        <span class="">物料1</span>
+
+                                    </div>
+                                    <div class=" padding-20 hide" style="display: block;border-left: 1px solid #cecece;border-right: 1px solid #cecece;min-height:240px;">
+                                        <div
+                                                u-meta='{"id":"grid4","type":"grid","data":"dataTable","columnMenu":true,"canDrag":false,"sortable":false,"canSwap":false}'>
+                                            <div options='{"field":"title","dataType":"String","title":"申请标题"}'></div>
+                                            <div options='{"field":"info","dataType":"String","title":"商品信息"}'></div>
+                                            <div options='{"field":"price","dataType":"String","title":"价格"}'></div>
+                                            <div options='{"field":"validate","dataType":"time","title":"有效期"}'></div>
+                                            <div options='{"field":"update","dataType":"time","title":"更新时间"}'></div>
+                                            <div options='{"field":"human","dataType":"String","title":"更新人"}'></div>
+                                            <div options='{"field":"things","dataType":"String","title":"对应买家物料"}'></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="">
+                                    <div class="u-form-control ">
+                                        <span class=""><a class="uf specdown uf-anglearrowdown"></a><a class="uf specup uf-uparrow hide"></a></span>
+                                        <span class="">物料2</span>
+                                    </div>
+                                    <div class=" padding-20 hide" style="display: block;border-left: 1px solid #cecece;border-right: 1px solid #cecece;min-height:240px;">
+                                        <div
+                                                u-meta='{"id":"grid5","type":"grid","data":"dataTable","columnMenu":true,"canDrag":false,"sortable":false,"canSwap":false}'>
+                                            <div options='{"field":"title","dataType":"String","title":"申请标题"}'></div>
+                                            <div options='{"field":"info","dataType":"String","title":"商品信息"}'></div>
+                                            <div options='{"field":"price","dataType":"String","title":"价格"}'></div>
+                                            <div options='{"field":"validate","dataType":"time","title":"有效期"}'></div>
+                                            <div options='{"field":"update","dataType":"time","title":"更新时间"}'></div>
+                                            <div options='{"field":"human","dataType":"String","title":"更新人"}'></div>
+                                            <div options='{"field":"things","dataType":"String","title":"对应买家物料"}'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="">
+                                    <div class="u-form-control ">
+                                        <span class=""><a class="uf uf-anglearrowdown"></a><a class="uf uf-uparrow hide"></a></span>
+                                        <span class="">物料3</span>
+                                    </div>
+                                    <div class=" padding-20 hide" style="display: block;border-left: 1px solid #cecece;border-right: 1px solid #cecece;min-height:240px;">
+                                        <div
+                                                u-meta='{"id":"grid6","type":"grid","data":"dataTable","columnMenu":true,"canDrag":false,"sortable":false,"canSwap":false}'>
+                                            <div options='{"field":"title","dataType":"String","title":"申请标题"}'></div>
+                                            <div options='{"field":"info","dataType":"String","title":"商品信息"}'></div>
+                                            <div options='{"field":"price","dataType":"String","title":"价格"}'></div>
+                                            <div options='{"field":"validate","dataType":"time","title":"有效期"}'></div>
+                                            <div options='{"field":"update","dataType":"time","title":"更新时间"}'></div>
+                                            <div options='{"field":"human","dataType":"String","title":"更新人"}'></div>
+                                            <div options='{"field":"things","dataType":"String","title":"对应买家物料"}'></div>
+                                        </div>
+                                    </div>
+                                </div>
+-->
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="paginate-box">
+                        <div id="pagination" class="u-pagination"></div>
+                    </div>
+
+                </div>
+                <!-- main-container结束-->
+            </div>
+
+        </div>
+    </div>
+    <div id="toolbar" style="display: none"></div>
+</div>
+<!-- End Page -->
+
+<!--<script src="lib/jquery/jquery.mousewheel.min.js"></script>-->
+<!--&lt;!&ndash;  <script src="../../trd/uui/js/u.js"></script>&ndash;&gt;-->
+<script type="text/javascript" src='//design.yyuap.com/static/uui/3.0.6/js/u.js'></script>
+<script src="//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
+<script src="http://design.yyuap.com/static/jquery/jquery-1.11.2.js"></script>
+<script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
+<script src="http://design.yyuap.com/static/uui/latest/js/u-grid.js"></script>
+<script src="js/index.js"></script>
+
+<script type="text/javascript" src='js/sidebar.js'></script>
+<script type="text/javascript" src='js/collpase.js'></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+
+<script type="text/javascript">
+    u.on(window, 'load', function() {
+        var bar = new sidebar('.menubar');
+       /*下面是正文内容对应的*/
+
+    });
+</script>
+</body>
+
+</html>
