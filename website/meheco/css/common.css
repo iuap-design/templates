@@ -1434,6 +1434,9 @@ li.u-menu-item:hover {
 #widgetpanel .u-grid-noRowsDiv,#oaApprove .u-grid-content table{
     width:100%!important;
 }
+#dataGrid_content_div>div{
+    display: none;
+}
 
 /*正文最上面的*/
 .swiper-slide{

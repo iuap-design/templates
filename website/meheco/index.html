@@ -170,11 +170,12 @@
                                             </ul>
                                         </div>
                                         <div class="u-panel-body">
-                                            <div u-meta=''>
-                                                <div options=''></div>
-                                                <div options=''></div>
-                                                <div options=''></div>
+                                            <div  u-meta='{"id":"dataGrid","data":"dataTable","type":"grid"}' class="margin-bottom-10">
+                                                <div options='{"field":"name","dataType":"String","editType":"string","sortable":true,"canSwap":true}'></div>
+                                                <div options='{"field":"classify","dataType":"String","editType":"string" ,"renderType":"timeRender","sortable":true}' ></div>
+                                                <div options='{"field":"place","dataType":"String","editType":"float","sumCol":true}' ></div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -322,6 +323,10 @@
 <script type="text/javascript" src='js/sidebar.js'></script>
 <script type="text/javascript" src='js/collpase.js'></script>
 <script type="text/javascript" src="js/dropdown.js"></script>
+<script src="//design.yyuap.com/static/knockout/knockout-3.2.0.debug.js"></script>
+<script src="//design.yyuap.com/static/uui/latest/js/u.js"></script>
+<script src="http://design.yyuap.com/static/uui/latest/js/u-grid.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
 
 <script type="text/javascript">
