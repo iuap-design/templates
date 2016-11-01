@@ -255,3 +255,9 @@
 .self-person-construc-leavework{
     color:#2196F3;
 }
+@media (max-width:1280px) {
+   .self-padding-show {
+       padding-left: 0;
+       padding-right: 0;
+    }
+}
